@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UAV-DRES · 无人机 RGB-D 指代分割基准数据集</title>
+<meta name="description" content="UAV-DRES: an aerial RGB-D benchmark for referring image segmentation with 18,140 referring expressions across 11,322 unique frames, 15 categories, and 6 sources.">
+<link rel="icon" href="./quality/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./quality/research-home.css?v=20261123-toplinks">
+<link rel="preload" as="image" type="image/webp" imagesrcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-rgb-320-38add1e956d35132.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-rgb-480-4bdec824b62eea07.webp 480w" imagesizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" imagesrcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-d_fixed-320-72f822fdfe8fd56c.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-d_fixed-480-025b5e8d5bef106a.webp 480w" imagesizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" imagesrcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-mask-320-bec32b693803287c.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-mask-480-c81091da12b8a589.webp 480w" imagesizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" imagesrcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-overlay-320-1f5c6e2b40c54bf7.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-overlay-480-987db1debd94629f.webp 480w" imagesizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" fetchpriority="high">
+<link rel="preload" as="fetch" href="./quality/showcase-data-v11.json?v=20261123-toplinks" crossorigin>
+<link rel="preload" as="fetch" href="./quality/v11/dataset.json?v=20261123-toplinks" crossorigin>
+<link rel="preload" as="fetch" href="./quality/v11/summary.json?v=20261123-toplinks" crossorigin>
+<script defer src="./quality/research-benchmark.js?v=20261123-toplinks"></script>
+<script defer src="./quality/target-labels.js?v=20261123-toplinks"></script>
+<script defer src="./quality/research-home.js?v=20261123-toplinks"></script>
+</head>
+<body id="top">
+<a data-zh="跳至正文" data-en="Skip to content" href="#overview" class="skip">跳至正文</a>
+
+<header class="site-header">
+<div class="container header-row">
+<a href="#top" class="wordmark">
+<span class="wordmark-dot" aria-hidden="true"></span>
+<span>UAV-DRES</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a data-zh="概览" data-en="Overview" href="#overview">概览</a>
+<a data-zh="样本" data-en="Gallery" href="#examples">样本</a>
+<a data-zh="统计" data-en="Statistics" href="#statistics">统计</a>
+<a data-zh="协议与代码" data-en="Benchmark" href="#benchmark">协议与代码</a>
+<a data-zh="引用" data-en="Citation" href="#citation">引用</a>
+</nav>
+<div class="lang-switch" role="group" aria-label="Language">
+<button type="button" data-lang="zh" aria-pressed="true">中文</button>
+<button type="button" data-lang="en" aria-pressed="false">EN</button>
+</div>
+</div>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<section class="hero-band">
+<div class="container">
+<div class="hero-copy">
+<p class="eyebrow" data-zh="无人机多模态指代分割基准" data-en="Aerial RGB-D Referring Benchmark">无人机多模态指代分割基准</p>
+<h1>UAV-DRES</h1>
+<p class="hero-subtitle" data-zh="面向低空无人机视角的 RGB-D 语言指代分割基准，提供空间对齐的航拍图像、双视角几何信息与细粒度目标掩码。" data-en="A referring image segmentation benchmark for low-altitude aerial views, pairing aligned RGB imagery and dual-view geometry with fine-grained target masks.">面向低空无人机视角的 RGB-D 语言指代分割基准，提供空间对齐的航拍图像、双视角几何信息与细粒度目标掩码。</p>
+<div class="hero-actions">
+<a class="btn-solid" data-zh="浏览样本集" data-en="Explore gallery" href="#examples">浏览样本集</a>
+<a class="btn-ghost" data-zh="查看评测协议" data-en="View benchmark protocol" href="#benchmark">查看评测协议</a>
+</div>
+</div>
+<div class="hero-platforms" id="hero-platforms" aria-label="Publication and dataset mirror links"></div>
+
+<dl class="kpi-strip">
+<div>
+<dt data-zh="指代记录" data-en="Referring expressions">指代记录</dt>
+<dd data-stat="records">18,140</dd>
+</div>
+<div>
+<dt data-zh="唯一 RGB-D 图像" data-en="Unique RGB-D frames">唯一 RGB-D 图像</dt>
+<dd data-stat="groups">11,322</dd>
+</div>
+<div>
+<dt data-zh="前景目标类别" data-en="Object categories">前景目标类别</dt>
+<dd data-stat="classes">15</dd>
+</div>
+<div>
+<dt data-zh="航拍数据源" data-en="Aerial sources">航拍数据源</dt>
+<dd data-stat="sources">6</dd>
+</div>
+</dl>
+
+<p id="data-status" role="status" class="status-banner" hidden></p>
+
+<!-- Interactive Spotlight Figure (SSR Scene 1 for zero-waterfall first paint) -->
+<figure class="spotlight-figure" id="main-figure">
+<div class="spotlight-topbar">
+<div class="spotlight-tabs" id="hero-switcher" role="tablist" aria-label="Featured scenes">
+<button type="button" role="tab" aria-selected="true" data-hero-idx="0">CODrone 桥梁</button>
+<button type="button" role="tab" aria-selected="false" data-hero-idx="1">RIS-LAD 卡车</button>
+<button type="button" role="tab" aria-selected="false" data-hero-idx="2">DDOS 建筑</button>
+<button type="button" role="tab" aria-selected="false" data-hero-idx="3">UAVPal 树木</button>
+</div>
+<div class="colorbar-legend">
+<span class="viridis-strip" aria-hidden="true"></span>
+<span data-zh="D 有效区 p02–p98：紫（远/低）→ 黄（近/高）" data-en="D valid p02–p98: Purple (far/low) → Yellow (near/high)">D 有效区 p02–p98：紫（远/低）→ 黄（近/高）</span>
+</div>
+</div>
+<div class="spotlight-stage" id="hero-panels" data-ssr-id="184c17f73d524bbfe495a3981f322d9a">
+<div class="figure-grid">
+<div class="figure-panel"><button type="button" data-record="184c17f73d524bbfe495a3981f322d9a" aria-label="放大查看 · 桥梁 · RGB"><span class="image-stage"><img src="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-rgb-480-4bdec824b62eea07.webp" srcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-rgb-320-38add1e956d35132.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-rgb-480-4bdec824b62eea07.webp 480w" sizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" data-kind="rgb" alt="桥梁 · RGB · 184c17f73d524bbfe495a3981f322d9a" width="480" height="480" loading="eager" fetchpriority="high" decoding="async"></span></button><span class="panel-sublabel">(a) RGB</span></div>
+<div class="figure-panel"><button type="button" data-record="184c17f73d524bbfe495a3981f322d9a" aria-label="放大查看 · 桥梁 · D 几何图"><span class="image-stage"><img src="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-d_fixed-480-025b5e8d5bef106a.webp" srcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-d_fixed-320-72f822fdfe8fd56c.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-d_fixed-480-025b5e8d5bef106a.webp 480w" sizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" data-kind="d_fixed" alt="桥梁 · D 几何图 · 184c17f73d524bbfe495a3981f322d9a" width="480" height="480" loading="eager" fetchpriority="high" decoding="async"></span></button><span class="panel-sublabel">(b) D 几何图</span></div>
+<div class="figure-panel"><button type="button" data-record="184c17f73d524bbfe495a3981f322d9a" aria-label="放大查看 · 桥梁 · 目标掩码"><span class="image-stage"><img src="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-mask-480-c81091da12b8a589.webp" srcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-mask-320-bec32b693803287c.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-mask-480-c81091da12b8a589.webp 480w" sizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" data-kind="mask" alt="桥梁 · 目标掩码 · 184c17f73d524bbfe495a3981f322d9a" width="480" height="480" loading="eager" fetchpriority="high" decoding="async"></span></button><span class="panel-sublabel">(c) 目标掩码</span></div>
+<div class="figure-panel"><button type="button" data-record="184c17f73d524bbfe495a3981f322d9a" aria-label="放大查看 · 桥梁 · 掩码叠加"><span class="image-stage" data-target-id="184c17f73d524bbfe495a3981f322d9a" data-target-label="桥梁"><img src="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-overlay-480-987db1debd94629f.webp" srcset="./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-overlay-320-1f5c6e2b40c54bf7.webp 320w, ./quality/showcase-media-v11/184c17f73d524bbfe495a3981f322d9a-overlay-480-987db1debd94629f.webp 480w" sizes="(min-width:1024px) 270px, (min-width:720px) 24vw, 46vw" data-kind="overlay" alt="桥梁 · 掩码叠加 · 184c17f73d524bbfe495a3981f322d9a" width="480" height="480" loading="eager" fetchpriority="high" decoding="async"><svg class="target-leader" aria-hidden="true"></svg><span class="target-label" aria-hidden="true"></span></span></button><span class="panel-sublabel">(d) 掩码叠加</span></div>
+</div>
+</div>
+<figcaption class="spotlight-caption" id="hero-caption">
+<div class="spotlight-quote"><span class="spotlight-expr-en" lang="en">“the white arched pedestrian bridge spanning the highway, featuring a yellow banner with red text along its side and elevated ramps on both ends”</span><span class="spotlight-expr-zh" lang="zh-CN">横跨公路的白色拱形人行天桥，桥侧挂有黄底红字横幅，两端带有高架引坡。</span></div><span class="spotlight-meta">CODrone / 训练 / 倾斜</span>
+</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- ========== OVERVIEW (Asymmetric 4:8 Editorial) ========== -->
+<section class="band band-white" id="overview">
+<div class="container editorial-grid">
+<div class="editorial-rail">
+<span class="kicker" data-zh="概览" data-en="Overview">概览</span>
+<h2 data-zh="多源航拍场景下的细粒度跨模态定位" data-en="Fine-grained grounding across multi-source aerial scenes">多源航拍场景下的细粒度跨模态定位</h2>
+</div>
+<div class="editorial-body">
+<p class="lead-prose" data-zh="UAV-DRES 汇集 CODrone、RIS-LAD、FlyAwareV2、DDOS、UAVid 与 UAVPal 共 6 个真实及合成航拍数据源，覆盖车辆、行人、建筑、桥梁、船舶、植被与动物等 15 类常见低空前景目标。每条记录均包含空间对齐的 RGB 图像、几何图 D、二值有效区域掩码 D_valid、英文指代表达与目标二值掩码。" data-en="UAV-DRES unifies 6 real and synthetic aerial sources—CODrone, RIS-LAD, FlyAwareV2, DDOS, UAVid, and UAVPal—spanning 15 foreground object categories including vehicles, pedestrians, buildings, bridges, vessels, trees, and animals. Every record pairs a spatially aligned RGB frame, a geometry map D, a binary validity mask D_valid, an English referring expression, and a binary target mask.">UAV-DRES 汇集 CODrone、RIS-LAD、FlyAwareV2、DDOS、UAVid 与 UAVPal 共 6 个真实及合成航拍数据源，覆盖车辆、行人、建筑、桥梁、船舶、植被与动物等 15 类常见低空前景目标。每条记录均包含空间对齐的 RGB 图像、几何图 D、二值有效区域掩码 D_valid、英文指代表达与目标二值掩码。</p>
+
+<div class="pillars-grid">
+<article class="pillar">
+<h3 data-zh="双视角几何语义" data-en="Dual-view geometry">双视角几何语义</h3>
+<p data-zh="区分倾斜深度（值越大越远，10,908 条）与垂直相对高度（值越大越高，7,232 条），均配有效区掩码。" data-en="Distinguishes oblique camera depth (10,908 records) from vertical relative height (7,232 records), each paired with a validity mask.">区分倾斜深度（值越大越远，10,908 条）与垂直相对高度（值越大越高，7,232 条），均配有效区掩码。</p>
+</article>
+<article class="pillar">
+<h3 data-zh="场景聚类零重叠划分" data-en="Scene-cluster isolation">场景聚类零重叠划分</h3>
+<p data-zh="基于 6,278 个源帧分组严格隔离训练、验证与测试集，保证跨划分图像、分组与场景聚类零重叠。" data-en="Partitioned across 6,278 source-frame groups so train, validation, and test splits share zero images, groups, or scene clusters.">基于 6,278 个源帧分组严格隔离训练、验证与测试集，保证跨划分图像、分组与场景聚类零重叠。</p>
+</article>
+<article class="pillar">
+<h3 data-zh="掩码与深度严格解耦" data-en="Depth-independent GT">掩码与深度严格解耦</h3>
+<p data-zh="全部目标真值掩码均独立于深度信号标注与核验，且同一 RGB 图像对应唯一几何映射，杜绝跨模态标签泄漏。" data-en="All ground-truth masks are annotated independently of depth values, and each unique RGB frame maps to a single consistent geometry file.">全部目标真值掩码均独立于深度信号标注与核验，且同一 RGB 图像对应唯一几何映射，杜绝跨模态标签泄漏。</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== VISUAL GALLERY (Full-bleed soft surface band) ========== -->
+<section class="band band-tint" id="examples">
+<div class="container">
+<div class="section-header-split">
+<div>
+<span class="kicker" data-zh="样本展廊" data-en="Gallery">样本展廊</span>
+<h2 data-zh="跨来源与多模态样本浏览" data-en="Representative multimodal examples">跨来源与多模态样本浏览</h2>
+<p class="section-sub" data-zh="涵盖全部 15 类目标、6 个数据源与双视角；原位切换显示模态，点击任意卡片展开高分辨率四联对比。" data-en="Spanning all 15 categories, 6 sources, and both views. Switch modalities in place or click any card for a full four-panel inspection.">涵盖全部 15 类目标、6 个数据源与双视角；原位切换显示模态，点击任意卡片展开高分辨率四联对比。</p>
+</div>
+<div class="modality-segment" role="group" id="display-modes" aria-label="Display modality">
+<button type="button" data-mode="overlay" aria-pressed="true" data-zh="叠加" data-en="Overlay">叠加</button>
+<button type="button" data-mode="rgb" aria-pressed="false">RGB</button>
+<button type="button" data-mode="d_fixed" aria-pressed="false">D</button>
+<button type="button" data-mode="mask" aria-pressed="false" data-zh="掩码" data-en="Mask">掩码</button>
+</div>
+</div>
+
+<div class="filter-bar">
+<div class="source-chips" id="source-chips" role="group" aria-label="Filter by source"></div>
+<div class="filter-controls">
+<select id="sample-class" aria-label="Category filter">
+<option value="">全部类别</option>
+</select>
+<select id="sample-view" aria-label="View filter">
+<option value="">全部视角</option>
+<option value="oblique_depth">倾斜视角（深度）</option>
+<option value="vertical_relative_height">垂直视角（相对高度）</option>
+</select>
+<button data-zh="重置" data-en="Reset" id="reset-filters" type="button" class="link-btn" hidden>重置</button>
+</div>
+</div>
+
+<div id="gallery" class="exhibition-grid" aria-busy="true"></div>
+
+<div class="gallery-footer">
+<span id="sample-count" role="status"></span>
+<button data-zh="加载更多样本" data-en="Show more examples" type="button" id="load-more" class="btn-ghost" hidden>加载更多样本</button>
+</div>
+</div>
+</section>
+
+<!-- ========== STATISTICS (Pure White, Clean Tabbed Explorer) ========== -->
+<section class="band band-white" id="statistics">
+<div class="container">
+<div class="section-header-split">
+<div>
+<span class="kicker" data-zh="数据分布" data-en="Statistics">数据分布</span>
+<h2 data-zh="类别、来源与视角构成" data-en="Composition &amp; distributions">类别、来源与视角构成</h2>
+</div>
+<div class="stats-header-actions">
+<div class="underline-tabs" role="tablist" aria-label="Statistics views" id="stats-tabs">
+<button type="button" role="tab" id="stab-overview" aria-controls="spanel-overview" aria-selected="true" tabindex="0" data-spanel="overview" data-zh="类别与划分" data-en="Categories &amp; splits">类别与划分</button>
+<button type="button" role="tab" id="stab-sources" aria-controls="spanel-sources" aria-selected="false" tabindex="-1" data-spanel="sources" data-zh="来源与视角" data-en="Sources &amp; views">来源与视角</button>
+<button type="button" role="tab" id="stab-matrix" aria-controls="spanel-matrix" aria-selected="false" tabindex="-1" data-spanel="matrix" data-zh="类别 × 划分矩阵" data-en="Category × split matrix">类别 × 划分矩阵</button>
+</div>
+<button data-zh="导出 CSV ↓" data-en="Export CSV ↓" type="button" id="export-stats" class="link-btn" disabled>导出 CSV ↓</button>
+</div>
+</div>
+
+<!-- Stats Panel 1: Category Bars + Right Summary Rail -->
+<div id="spanel-overview" role="tabpanel" aria-labelledby="stab-overview" class="stats-panel-grid">
+<div class="stats-main">
+<h3 class="panel-heading" data-zh="15 类前景目标分布" data-en="Distribution across 15 object categories">15 类前景目标分布</h3>
+<div id="class-bars"></div>
+</div>
+<aside class="stats-rail">
+<div class="rail-block">
+<h3 data-zh="数据划分比例" data-en="Dataset splits">数据划分比例</h3>
+<div id="split-chart"></div>
+</div>
+<div class="rail-block">
+<h3 data-zh="几何视角构成" data-en="Geometry views">几何视角构成</h3>
+<div id="view-chart"></div>
+</div>
+<div class="rail-block rail-integrity">
+<h3 data-zh="划分隔离核验" data-en="Split integrity">划分隔离核验</h3>
+<dl class="integrity-list">
+<div><dt data-zh="源帧分组数" data-en="Source-frame groups">源帧分组数</dt><dd>6,278</dd></div>
+<div><dt data-zh="跨划分重叠" data-en="Cross-split overlap">跨划分重叠</dt><dd>0</dd></div>
+<div><dt data-zh="标准评测网格" data-en="Canonical eval grid">标准评测网格</dt><dd>640 × 640</dd></div>
+</dl>
+</div>
+</aside>
+</div>
+
+<!-- Stats Panel 2: Sources Donut + Source Split Table -->
+<div id="spanel-sources" role="tabpanel" aria-labelledby="stab-sources" class="stats-sources-grid" hidden>
+<div>
+<h3 data-zh="上游数据源占比" data-en="Upstream source share">上游数据源占比</h3>
+<figure id="source-pie"></figure>
+</div>
+<div>
+<h3 data-zh="各来源划分明细" data-en="Records by source and split">各来源划分明细</h3>
+<div class="table-scroll">
+<table id="source-table"></table>
+</div>
+<p class="footnote" id="version-note"></p>
+</div>
+</div>
+
+<!-- Stats Panel 3: Full 15 x 3 Academic Matrix -->
+<div id="spanel-matrix" role="tabpanel" aria-labelledby="stab-matrix" hidden>
+<div class="table-scroll">
+<table id="matrix-table"></table>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benchmark protocol and reader documentation -->
+<section class="band band-tint" id="benchmark">
+<span id="resources" aria-hidden="true"></span>
+<div class="container">
+<div class="docs-grid">
+<div class="docs-rail">
+<span class="kicker" data-zh="基准协议与读取" data-en="Benchmark &amp; Access">基准协议与读取</span>
+<h2 data-zh="标准划分与评测接口" data-en="Reproducible splits &amp; reader">标准划分与评测接口</h2>
+<p class="section-sub" data-zh="介绍固定划分、统一评测协议（uav-rgbd-640-prob-v1）及 Python 读取接口。" data-en="Fixed splits, the uav-rgbd-640-prob-v1 evaluation protocol, and the Python reader interface.">介绍固定划分、统一评测协议（uav-rgbd-640-prob-v1）及 Python 读取接口。</p>
+
+<div class="table-scroll rail-splits">
+<table id="benchmark-splits"></table>
+</div>
+<div id="benchmark-stack"></div>
+<p id="benchmark-status" class="footnote" role="status" hidden></p>
+
+</div>
+
+<div class="docs-workspace">
+<div class="workspace-tabs" role="tablist" aria-label="Technical documentation">
+<button data-zh="Python 读取" data-en="Python reader" role="tab" type="button" id="tab-reader" aria-controls="panel-reader" aria-selected="true" tabindex="0" data-panel="reader">Python 读取</button>
+<button data-zh="评测协议" data-en="Protocol" role="tab" type="button" id="tab-evaluation" aria-controls="panel-evaluation" aria-selected="false" tabindex="-1" data-panel="evaluation">评测协议</button>
+<button data-zh="复现步骤" data-en="Reproduce" role="tab" type="button" id="tab-reproduce" aria-controls="panel-reproduce" aria-selected="false" tabindex="-1" data-panel="reproduce">复现步骤</button>
+<button data-zh="校验信息" data-en="Checksums" role="tab" type="button" id="tab-checksums" aria-controls="panel-checksums" aria-selected="false" tabindex="-1" data-panel="checksums">校验信息</button>
+</div>
+
+<!-- Tab 1: Python Reader & Fields -->
+<div id="panel-reader" role="tabpanel" aria-labelledby="tab-reader" class="workspace-panel">
+<p class="ws-intro" data-zh="官方读取器加载空间对齐的 RGB、几何图 D、有效区掩码 D_valid 与目标二值掩码，兼容浮点 TIFF 与 16 位无符号 TIFF 深度存储及 PNG / COCO RLE 掩码。缩放时 RGB 与 D 使用双线性插值，掩码与 D_valid 使用最近邻插值。" data-en="The official reader loads spatially aligned RGB, geometry D, validity mask D_valid, and binary target mask across float32/uint16 TIFF depth and PNG/COCO RLE mask formats. RGB and D use bilinear interpolation; masks and D_valid use nearest-neighbor.">官方读取器加载空间对齐的 RGB、几何图 D、有效区掩码 D_valid 与目标二值掩码，兼容浮点 TIFF 与 16 位无符号 TIFF 深度存储及 PNG / COCO RLE 掩码。缩放时 RGB 与 D 使用双线性插值，掩码与 D_valid 使用最近邻插值。</p>
+<pre data-lang-label="Python"><code>from dataset_release import DatasetRelease
+
+release = DatasetRelease(root, split="train")
+sample = release.load(record_id, size=640)
+
+sample["RGB"], sample["D"]        # (H, W, 3) uint8, (H, W) float32
+sample["D_valid"], sample["mask"] # (H, W) bool, (H, W) bool
+sample["expression_en"], sample["D_role"], sample["view_id"]</code></pre>
+<div class="table-scroll ws-table">
+<table class="fields-table">
+<thead>
+<tr>
+<th data-zh="字段" data-en="Field">字段</th>
+<th data-zh="类型" data-en="Type">类型</th>
+<th data-zh="说明" data-en="Description">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row"><code>RGB</code></th><td><code>H×W×3 uint8</code></td><td data-zh="航拍彩色图像" data-en="Aerial RGB image">航拍彩色图像</td></tr>
+<tr><th scope="row"><code>D</code></th><td><code>H×W float32</code></td><td data-zh="倾斜相机深度（越大越远）/ 垂直相对高度（越大越高）" data-en="Oblique camera depth (larger = farther) / vertical relative height (larger = taller)">倾斜相机深度（越大越远）/ 垂直相对高度（越大越高）</td></tr>
+<tr><th scope="row"><code>D_valid</code></th><td><code>H×W bool</code></td><td data-zh="几何有效区域掩码" data-en="Valid geometry region mask">几何有效区域掩码</td></tr>
+<tr><th scope="row"><code>mask</code></th><td><code>H×W bool</code></td><td data-zh="所指目标二值掩码" data-en="Referred target binary mask">所指目标二值掩码</td></tr>
+<tr><th scope="row"><code>expression_en</code></th><td><code>str</code></td><td data-zh="英文指代表达" data-en="English referring expression">英文指代表达</td></tr>
+<tr><th scope="row"><code>class_name</code></th><td><code>str</code></td><td data-zh="15 类前景目标标签" data-en="Target object category (15 classes)">15 类前景目标标签</td></tr>
+<tr><th scope="row"><code>split</code></th><td><code>str</code></td><td data-zh="固定划分（train / val / test）" data-en="Fixed split (train / val / test)">固定划分（train / val / test）</td></tr>
+<tr><th scope="row"><code>D_role / view_id</code></th><td><code>str / int</code></td><td data-zh="oblique_depth (0) / vertical_relative_height (1)" data-en="oblique_depth (0) / vertical_relative_height (1)">oblique_depth (0) / vertical_relative_height (1)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- Tab 2: Official Evaluation Protocol -->
+<div id="panel-evaluation" role="tabpanel" aria-labelledby="tab-evaluation" class="workspace-panel" hidden>
+<div class="table-scroll">
+<table class="protocol-table">
+<tbody>
+<tr><th scope="row">Protocol</th><td>uav-rgbd-640-prob-v1</td></tr>
+<tr><th scope="row">Grid</th><td data-zh="640 × 640 标准网格；真值掩码采用最近邻插值重建" data-en="640 × 640 canonical grid; nearest-neighbor GT resize">640 × 640 标准网格；真值掩码采用最近邻插值重建</td></tr>
+<tr><th scope="row">Prediction</th><td data-zh="FP32 前景概率 ∈ [0, 1]；先激活，再双线性缩放（align_corners=False）" data-en="FP32 foreground probability ∈ [0, 1]; activate before bilinear resize (align_corners=False)">FP32 前景概率 ∈ [0, 1]；先激活，再双线性缩放（align_corners=False）</td></tr>
+<tr><th scope="row">Threshold</th><td data-zh="前景二值化阈值 ≥ 0.5" data-en="Foreground threshold ≥ 0.5">前景二值化阈值 ≥ 0.5</td></tr>
+<tr><th scope="row">Coverage</th><td data-zh="精确覆盖测试集全部 1,775 条记录 ID（ID.npy）" data-en="Exact coverage of all 1,775 test record IDs (ID.npy)">精确覆盖测试集全部 1,775 条记录 ID（ID.npy）</td></tr>
+</tbody>
+</table>
+</div>
+<dl class="metrics-row">
+<div>
+<dt>mIoU</dt>
+<dd data-zh="全部 1,775 条测试记录各自 IoU 的算术均值，并按类别、来源与视角分层报告。" data-en="Mean IoU across all 1,775 test records, with stratified breakdown by category, source, and view.">全部 1,775 条测试记录各自 IoU 的算术均值，并按类别、来源与视角分层报告。</dd>
+</div>
+<div>
+<dt>oIoU</dt>
+<dd data-zh="全部测试记录的累积交集像素总和除以累积并集像素总和。" data-en="Cumulative intersection pixels divided by cumulative union pixels across test.">全部测试记录的累积交集像素总和除以累积并集像素总和。</dd>
+</div>
+<div>
+<dt>P@0.5–0.9</dt>
+<dd data-zh="IoU 达到阈值（0.5 至 0.9，步长 0.1）的测试记录占比。" data-en="Percentage of test records reaching IoU ≥ threshold (0.5 to 0.9, step 0.1).">IoU 达到阈值（0.5 至 0.9，步长 0.1）的测试记录占比。</dd>
+</div>
+</dl>
+<pre data-lang-label="Shell"><code>python evaluate.py evaluate --root /path/to/dataset \
+  --checkpoint ./endpoint.pth --inference-code ./infer.py \
+  --lock ./protocol.lock.json --predictions ./predictions --out ./test-results</code></pre>
+</div>
+
+<!-- Tab 3: Reproduce -->
+<div id="panel-reproduce" role="tabpanel" aria-labelledby="tab-reproduce" class="workspace-panel" hidden>
+<ol class="steps-clean">
+<li>
+<h3 data-zh="核验完整性并导出固定划分清单" data-en="Audit integrity and export split manifests">核验完整性并导出固定划分清单</h3>
+<pre data-lang-label="Shell"><code>python dataset_tools.py audit --root /path/to/dataset --out ./audit.json
+python dataset_tools.py export --root /path/to/dataset --out ./manifests</code></pre>
+</li>
+<li>
+<h3 data-zh="验证选模完成后冻结最终推理配置" data-en="Freeze final checkpoint and inference entrypoint">验证选模完成后冻结最终推理配置</h3>
+<pre data-lang-label="Shell"><code>python evaluate.py freeze --root /path/to/dataset \
+  --checkpoint ./endpoint.pth --inference-code ./infer.py \
+  --model-input-size 512 512 --out ./protocol.lock.json</code></pre>
+</li>
+<li>
+<h3 data-zh="对全部 1,775 条测试样本预测并计分" data-en="Score all 1,775 test predictions">对全部 1,775 条测试样本预测并计分</h3>
+<pre data-lang-label="Shell"><code>python evaluate.py evaluate --root /path/to/dataset \
+  --checkpoint ./endpoint.pth --inference-code ./infer.py \
+  --lock ./protocol.lock.json --predictions ./predictions --out ./test-results</code></pre>
+</li>
+</ol>
+</div>
+
+<!-- Tab 4: Manifests, Checksums & Provenance -->
+<div id="panel-checksums" role="tabpanel" aria-labelledby="tab-checksums" class="workspace-panel" hidden>
+<h3 class="ws-subhead" data-zh="核心元数据 SHA-256" data-en="Core metadata SHA-256">核心元数据 SHA-256</h3>
+<dl id="benchmark-hashes" class="hash-dl"></dl>
+<h3 class="ws-subhead" data-zh="许可与上游数据源" data-en="Licensing &amp; upstream sources">许可与上游数据源</h3>
+<p class="footnote" data-zh="数据使用与分发遵循各上游数据源的许可条款，使用时请同时引用相应上游数据集。" data-en="Use and redistribution follow the licenses of the upstream sources; please cite the corresponding upstream datasets alongside this benchmark.">数据使用与分发遵循各上游数据源的许可条款，使用时请同时引用相应上游数据集。</p>
+<div id="figure-sources" class="inline-downloads"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== CITATION (Clean Asymmetric Band) ========== -->
+<section class="band band-white citation-band" id="citation">
+<div class="container editorial-grid">
+<div class="editorial-rail">
+<span class="kicker" data-zh="引用" data-en="Citation">引用</span>
+<h2 data-zh="学术引用格式" data-en="Cite this benchmark">学术引用格式</h2>
+<p class="footnote" data-zh="如本数据集对您的研究有所帮助，请引用右侧 BibTeX 条目及相应上游数据源。" data-en="If you use this benchmark in your research, please cite the BibTeX entry alongside the respective upstream datasets.">如本数据集对您的研究有所帮助，请引用右侧 BibTeX 条目及相应上游数据源。</p>
+</div>
+<div class="editorial-body">
+<pre id="bibtex" class="bibtex-pre" data-lang-label="BibTeX"><code>@misc{uavdres2026,
+  title = {{UAV-DRES}: An Aerial RGB-D Benchmark for Referring Image Segmentation},
+  author = {{UAV-DRES Authors}},
+  year = {2026},
+  howpublished = {\url{__SITE__}}
+}</code></pre>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-row">
+<span>UAV-DRES</span>
+<a data-zh="返回顶部 ↑" data-en="Back to top ↑" href="#top">返回顶部 ↑</a>
+</div>
+</footer>
+
+<dialog id="sample-dialog" aria-labelledby="dialog-title">
+<div class="dialog-head">
+<h2 id="dialog-title"></h2>
+<button data-zh="关闭" data-en="Close" id="close-dialog" type="button">关闭</button>
+</div>
+<div id="dialog-content"></div>
+</dialog>
+
+<noscript>
+<p class="container">请启用 JavaScript 加载交互样本与统计视图。Enable JavaScript to load interactive examples and statistics.</p>
+</noscript>
+</body>
+</html>

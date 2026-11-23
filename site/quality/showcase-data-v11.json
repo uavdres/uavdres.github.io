@@ -1,0 +1,6521 @@
+{
+  "schema_version": 2,
+  "recommended_records": 18140,
+  "asset_base": "showcase-media-v11/",
+  "hero_groups": [
+    {
+      "id": "184c17f73d524bbfe495a3981f322d9a",
+      "domain": "real",
+      "domain_reference": "https://github.com/VisDrone/CODrone"
+    },
+    {
+      "id": "native_11460",
+      "domain": "real",
+      "domain_reference": "https://arxiv.org/abs/2507.20920"
+    },
+    {
+      "id": "a142ce169f73e446da479a280a7dceb7",
+      "domain": "synthetic",
+      "domain_reference": "https://openaccess.thecvf.com/content/CVPR2024W/VDU/html/Kolbeinsson_DDOS_The_Drone_Depth_and_Obstacle_Segmentation_Dataset_CVPRW_2024_paper.html"
+    },
+    {
+      "id": "2130d457299668d683bee3bbc26a025d",
+      "domain": "real",
+      "domain_reference": "https://research.utwente.nl/en/datasets/uavpal/"
+    }
+  ],
+  "upstream_sources": [
+    {
+      "name": "CODrone",
+      "domain": "real",
+      "url": "https://github.com/VisDrone/CODrone"
+    },
+    {
+      "name": "RIS-LAD",
+      "domain": "real",
+      "url": "https://arxiv.org/abs/2507.20920"
+    },
+    {
+      "name": "FlyAwareV2",
+      "domain": "real/synthetic",
+      "url": "https://github.com/LTTM/FlyAwareV2"
+    },
+    {
+      "name": "DDOS",
+      "domain": "synthetic",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024W/VDU/html/Kolbeinsson_DDOS_The_Drone_Depth_and_Obstacle_Segmentation_Dataset_CVPRW_2024_paper.html"
+    },
+    {
+      "name": "UAVid",
+      "domain": "real",
+      "url": "https://uavid.nl/"
+    },
+    {
+      "name": "UAVPal",
+      "domain": "real",
+      "url": "https://research.utwente.nl/en/datasets/uavpal/"
+    }
+  ],
+  "items": [
+    {
+      "id": "000052fd7847f47fbef083639fb5e3f6",
+      "class_name": "car",
+      "source": "CODrone",
+      "split": "val",
+      "view": "vertical_relative_height",
+      "expression_en": "The white car parked on the road, positioned between a white van and a silver car.",
+      "gloss_zh": "停在路边、夹在白色面包车与银色轿车之间的白色汽车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAMAAAAAAADAAwAAAAAAAMADAAAAAAAAwAMAAAAAAADAAwAAAAAAAMADAAAAAAAAwAMAAAAAAADAAwAAAAAAAMADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.4838,
+            0.4838
+          ],
+          [
+            0.4921,
+            0.481
+          ],
+          [
+            0.5079,
+            0.4801
+          ],
+          [
+            0.5162,
+            0.4829
+          ],
+          [
+            0.4773,
+            0.4931
+          ],
+          [
+            0.5227,
+            0.4921
+          ],
+          [
+            0.4764,
+            0.5079
+          ],
+          [
+            0.5227,
+            0.5079
+          ],
+          [
+            0.4764,
+            0.5227
+          ],
+          [
+            0.5227,
+            0.5227
+          ],
+          [
+            0.4764,
+            0.5384
+          ],
+          [
+            0.5227,
+            0.5384
+          ],
+          [
+            0.4764,
+            0.5542
+          ],
+          [
+            0.5227,
+            0.5542
+          ],
+          [
+            0.4764,
+            0.5699
+          ],
+          [
+            0.5227,
+            0.5699
+          ],
+          [
+            0.4773,
+            0.5856
+          ],
+          [
+            0.5227,
+            0.5856
+          ],
+          [
+            0.4819,
+            0.5949
+          ],
+          [
+            0.4921,
+            0.5977
+          ],
+          [
+            0.5079,
+            0.5977
+          ],
+          [
+            0.5199,
+            0.594
+          ]
+        ],
+        "bbox": [
+          0.4731,
+          0.4796,
+          0.5278,
+          0.5981
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-rgb-320-f005e1cc284a7606.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-rgb-480-6147821edc7cb740.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-rgb-640-0941d3b95d352759.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-d_fixed-320-31003deaba63b74b.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-d_fixed-480-0709f4eac436abcf.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-d_fixed-640-f1a4541f5a318c10.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-mask-320-ea07f0176c1e2fdf.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-mask-480-2175e42aba8a7010.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-mask-640-de24b643f608e995.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-overlay-320-8dc15c42e1cf9549.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-overlay-480-553a3e4d33568b6d.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "000052fd7847f47fbef083639fb5e3f6-overlay-640-06e01b49ea02cf23.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "2a31a6994d975e5b81192b214622eb13",
+      "class_name": "animals",
+      "source": "DDOS",
+      "split": "test",
+      "view": "oblique_depth",
+      "expression_en": "the brown animal standing on the grass near the bottom of the frame",
+      "gloss_zh": "站在画面底部附近草地上的棕色动物。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAMAHAAAAAAAA8AcAAAAAAAD8AQAAAAAAAPwBAAAAAAAAfAAAAAAAAAAeAAAAAAAAAA4AAAA=",
+        "anchors": [
+          [
+            0.6326,
+            0.8826
+          ],
+          [
+            0.6062,
+            0.9049
+          ],
+          [
+            0.6188,
+            0.9007
+          ],
+          [
+            0.6479,
+            0.8993
+          ],
+          [
+            0.6562,
+            0.8979
+          ],
+          [
+            0.5757,
+            0.9174
+          ],
+          [
+            0.5854,
+            0.9132
+          ],
+          [
+            0.6479,
+            0.9132
+          ],
+          [
+            0.6576,
+            0.9132
+          ],
+          [
+            0.5451,
+            0.9354
+          ],
+          [
+            0.5563,
+            0.9299
+          ],
+          [
+            0.6299,
+            0.9271
+          ],
+          [
+            0.5382,
+            0.9451
+          ],
+          [
+            0.6188,
+            0.9451
+          ],
+          [
+            0.6285,
+            0.9451
+          ],
+          [
+            0.5382,
+            0.9604
+          ],
+          [
+            0.5854,
+            0.9604
+          ],
+          [
+            0.5951,
+            0.9549
+          ],
+          [
+            0.5285,
+            0.9826
+          ],
+          [
+            0.5687,
+            0.9715
+          ],
+          [
+            0.5285,
+            0.9882
+          ],
+          [
+            0.541,
+            0.9924
+          ],
+          [
+            0.5493,
+            0.991
+          ]
+        ],
+        "bbox": [
+          0.5264,
+          0.8819,
+          0.6611,
+          0.9931
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-rgb-320-d21afb9e510b130e.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-rgb-480-96f955e71d682a62.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-rgb-640-47ab6c5626dc0c19.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-d_fixed-320-88c16a192544073a.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-d_fixed-480-aefea22c2abf2834.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-d_fixed-640-81c70c134d100e49.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-mask-320-c394e6242ea2140d.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-mask-480-4619c3493d33c8ad.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-mask-640-c796f4ea4d199bce.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-overlay-320-2cb339ed86c80390.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-overlay-480-0148d9ff474d1244.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2a31a6994d975e5b81192b214622eb13-overlay-640-94ba06bcac63a0ab.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "1be8b0520f4a8a80432f20c296428642",
+      "class_name": "building",
+      "source": "UAVid",
+      "split": "test",
+      "view": "oblique_depth",
+      "expression_en": "the building with the blue roof located in front of the white structure",
+      "gloss_zh": "位于白色建筑前方的蓝色屋顶建筑物。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAQAAAAAAAPgfAAAAAAAA/v8AAAAAAAD//wMAAAAAwP//AwAAAADg//8BAAAAAOD//wEAAAAA4P//AAAAAADA/38AAAAAAID/PwAAAAAAAP4fAAAAAAAA+A8AAAAAAADAAwAAAAAAAMABAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.6986,
+            0.2005
+          ],
+          [
+            0.7106,
+            0.1949
+          ],
+          [
+            0.7264,
+            0.1949
+          ],
+          [
+            0.7412,
+            0.1958
+          ],
+          [
+            0.756,
+            0.2005
+          ],
+          [
+            0.6801,
+            0.2134
+          ],
+          [
+            0.7727,
+            0.2106
+          ],
+          [
+            0.7884,
+            0.2106
+          ],
+          [
+            0.8042,
+            0.2153
+          ],
+          [
+            0.8134,
+            0.2181
+          ],
+          [
+            0.6523,
+            0.2338
+          ],
+          [
+            0.6634,
+            0.2264
+          ],
+          [
+            0.8356,
+            0.2264
+          ],
+          [
+            0.8495,
+            0.2292
+          ],
+          [
+            0.8644,
+            0.2338
+          ],
+          [
+            0.6356,
+            0.2449
+          ],
+          [
+            0.8829,
+            0.2421
+          ],
+          [
+            0.8931,
+            0.2431
+          ],
+          [
+            0.6079,
+            0.2644
+          ],
+          [
+            0.6171,
+            0.2579
+          ],
+          [
+            0.8903,
+            0.2505
+          ],
+          [
+            0.5894,
+            0.2773
+          ],
+          [
+            0.881,
+            0.2727
+          ],
+          [
+            0.5856,
+            0.2884
+          ],
+          [
+            0.8755,
+            0.2866
+          ],
+          [
+            0.5856,
+            0.3023
+          ],
+          [
+            0.8662,
+            0.3032
+          ],
+          [
+            0.6032,
+            0.3181
+          ],
+          [
+            0.8468,
+            0.3134
+          ],
+          [
+            0.6236,
+            0.3282
+          ],
+          [
+            0.6347,
+            0.3338
+          ],
+          [
+            0.8329,
+            0.3319
+          ],
+          [
+            0.6523,
+            0.3449
+          ],
+          [
+            0.6634,
+            0.3514
+          ],
+          [
+            0.8153,
+            0.3458
+          ],
+          [
+            0.6829,
+            0.3625
+          ],
+          [
+            0.6968,
+            0.3662
+          ],
+          [
+            0.7106,
+            0.3671
+          ],
+          [
+            0.7884,
+            0.3662
+          ],
+          [
+            0.7977,
+            0.3597
+          ],
+          [
+            0.731,
+            0.3829
+          ],
+          [
+            0.7708,
+            0.3801
+          ],
+          [
+            0.731,
+            0.3977
+          ],
+          [
+            0.7542,
+            0.3931
+          ],
+          [
+            0.7329,
+            0.406
+          ],
+          [
+            0.7356,
+            0.4069
+          ]
+        ],
+        "bbox": [
+          0.5815,
+          0.188,
+          0.8935,
+          0.4074
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-rgb-320-fca6249d68e7f66b.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-rgb-480-616758c8811fa3c6.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-rgb-640-fedbb87bde1beb45.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-d_fixed-320-313c3b757a848d3f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-d_fixed-480-06d0de94f1b98bf4.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-d_fixed-640-120d93aa493462b4.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-mask-320-2a131f2526187a57.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-mask-480-fb3394010c5009e2.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-mask-640-238d83abbc292a6c.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-overlay-320-3729ec72c3ea1cfd.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-overlay-480-9cfd57318821e267.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "1be8b0520f4a8a80432f20c296428642-overlay-640-2c3c5d2cf3315a41.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "8ab0d5377137ba344c85d3ab68c2725a",
+      "class_name": "bridge",
+      "source": "FlyAwareV2",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "The bridge spanning the green water channel, featuring a row of vertical support pillars.",
+      "gloss_zh": "横跨绿色水道、下方带有一排竖直桥墩的桥梁。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P///38AAAD8////fwAAAPz///8/AAAAwH7//QcAAAAAfv//BwAAAAB+++0CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.1662,
+            0.2588
+          ],
+          [
+            0.1792,
+            0.2634
+          ],
+          [
+            0.1949,
+            0.2588
+          ],
+          [
+            0.2106,
+            0.2634
+          ],
+          [
+            0.2264,
+            0.2588
+          ],
+          [
+            0.2421,
+            0.2634
+          ],
+          [
+            0.2579,
+            0.2588
+          ],
+          [
+            0.2727,
+            0.2625
+          ],
+          [
+            0.2875,
+            0.2588
+          ],
+          [
+            0.3042,
+            0.2625
+          ],
+          [
+            0.3162,
+            0.2588
+          ],
+          [
+            0.3384,
+            0.2588
+          ],
+          [
+            0.3514,
+            0.2625
+          ],
+          [
+            0.3681,
+            0.2579
+          ],
+          [
+            0.3829,
+            0.2625
+          ],
+          [
+            0.3977,
+            0.2579
+          ],
+          [
+            0.4134,
+            0.2625
+          ],
+          [
+            0.4292,
+            0.2579
+          ],
+          [
+            0.4449,
+            0.2625
+          ],
+          [
+            0.4597,
+            0.2579
+          ],
+          [
+            0.4764,
+            0.2616
+          ],
+          [
+            0.4921,
+            0.2616
+          ],
+          [
+            0.5097,
+            0.2597
+          ],
+          [
+            0.5227,
+            0.2616
+          ],
+          [
+            0.5394,
+            0.2579
+          ],
+          [
+            0.5542,
+            0.2616
+          ],
+          [
+            0.5699,
+            0.2579
+          ],
+          [
+            0.5856,
+            0.2616
+          ],
+          [
+            0.6014,
+            0.2579
+          ],
+          [
+            0.6199,
+            0.2606
+          ],
+          [
+            0.631,
+            0.2579
+          ],
+          [
+            0.6477,
+            0.2606
+          ],
+          [
+            0.6634,
+            0.2606
+          ],
+          [
+            0.6801,
+            0.2588
+          ],
+          [
+            0.6949,
+            0.2606
+          ],
+          [
+            0.7106,
+            0.2579
+          ],
+          [
+            0.7264,
+            0.2606
+          ],
+          [
+            0.1653,
+            0.2727
+          ],
+          [
+            0.7264,
+            0.2681
+          ],
+          [
+            0.1681,
+            0.2884
+          ],
+          [
+            0.1792,
+            0.2875
+          ],
+          [
+            0.194,
+            0.2847
+          ],
+          [
+            0.2116,
+            0.2856
+          ],
+          [
+            0.2579,
+            0.2875
+          ],
+          [
+            0.3671,
+            0.2875
+          ],
+          [
+            0.5227,
+            0.2866
+          ],
+          [
+            0.6792,
+            0.2856
+          ],
+          [
+            0.6949,
+            0.2856
+          ],
+          [
+            0.7088,
+            0.2856
+          ],
+          [
+            0.2329,
+            0.2977
+          ],
+          [
+            0.2421,
+            0.3042
+          ],
+          [
+            0.2755,
+            0.3051
+          ],
+          [
+            0.3505,
+            0.3042
+          ],
+          [
+            0.3829,
+            0.3042
+          ],
+          [
+            0.5079,
+            0.3042
+          ],
+          [
+            0.5384,
+            0.3042
+          ],
+          [
+            0.6634,
+            0.3042
+          ],
+          [
+            0.2736,
+            0.3199
+          ],
+          [
+            0.3514,
+            0.3199
+          ],
+          [
+            0.3829,
+            0.3199
+          ],
+          [
+            0.406,
+            0.3125
+          ],
+          [
+            0.5301,
+            0.3236
+          ],
+          [
+            0.5634,
+            0.3171
+          ],
+          [
+            0.6329,
+            0.3208
+          ],
+          [
+            0.6634,
+            0.3171
+          ],
+          [
+            0.2764,
+            0.3319
+          ],
+          [
+            0.2884,
+            0.3319
+          ],
+          [
+            0.2977,
+            0.3319
+          ],
+          [
+            0.3273,
+            0.3292
+          ],
+          [
+            0.3356,
+            0.3319
+          ],
+          [
+            0.3495,
+            0.3319
+          ],
+          [
+            0.3829,
+            0.3319
+          ],
+          [
+            0.3977,
+            0.3319
+          ],
+          [
+            0.4338,
+            0.331
+          ],
+          [
+            0.4449,
+            0.331
+          ],
+          [
+            0.4551,
+            0.331
+          ],
+          [
+            0.4838,
+            0.3282
+          ],
+          [
+            0.4921,
+            0.331
+          ],
+          [
+            0.5069,
+            0.331
+          ],
+          [
+            0.5394,
+            0.331
+          ],
+          [
+            0.5542,
+            0.331
+          ],
+          [
+            0.5903,
+            0.3301
+          ],
+          [
+            0.6014,
+            0.331
+          ],
+          [
+            0.6116,
+            0.3301
+          ],
+          [
+            0.6477,
+            0.3301
+          ]
+        ],
+        "bbox": [
+          0.162,
+          0.2565,
+          0.7333,
+          0.3324
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-rgb-320-294c260936af881f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-rgb-480-38e8c783225609ff.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-rgb-640-8be2444cd86ca593.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-d_fixed-320-ed0fa012f8c1c578.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-d_fixed-480-42cf3302a217242e.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-d_fixed-640-991431de4f3127fe.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-mask-320-dbaf7fcd784e8f8c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-mask-480-74cb6d6f7898cc78.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-mask-640-a9444e2780ef53de.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-overlay-320-6eb40f3eb45c5d72.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-overlay-480-8e3d56050e79f0d6.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "8ab0d5377137ba344c85d3ab68c2725a-overlay-640-09306a2b25ba8b2d.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "62a418878cf85e505f63496fda34a09e",
+      "class_name": "building",
+      "source": "UAVPal",
+      "split": "val",
+      "view": "vertical_relative_height",
+      "expression_en": "The flat-roofed structure situated between the dark corrugated roof on the left and the building with a white tank on the right.",
+      "gloss_zh": "位于左侧深色波纹屋顶与右侧带白色水箱建筑之间的平顶结构。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+AAAAAAAA4H8AAAAAAADA/wAAAAAAAMD/AAAAAAAAwP8AAAAAAADA/wAAAAAAAMD/AAAAAAAAwP8AAAAAAADA/wAAAAAAAMD/AAAAAAAAwP8BAAAAAADA/wEAAAAAAMD/AQAAAAAAwP8BAAAAAADA/wEAAAAAAMD/AQAAAAAAwP8BAAAAAADA/wMAAAAAAMD/AwAAAAAAwP8DAAAAAADA/wMAAAAAAMD/AwAAAAAAwP8DAAAAAADA/wMAAAAAAMD/AwAAAAAAwP8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.5292,
+            0.0931
+          ],
+          [
+            0.5421,
+            0.0921
+          ],
+          [
+            0.5551,
+            0.0912
+          ],
+          [
+            0.5699,
+            0.0903
+          ],
+          [
+            0.5856,
+            0.0894
+          ],
+          [
+            0.6014,
+            0.0884
+          ],
+          [
+            0.4681,
+            0.1014
+          ],
+          [
+            0.4764,
+            0.1014
+          ],
+          [
+            0.4921,
+            0.1014
+          ],
+          [
+            0.5079,
+            0.1014
+          ],
+          [
+            0.6014,
+            0.1014
+          ],
+          [
+            0.4764,
+            0.1171
+          ],
+          [
+            0.6097,
+            0.1171
+          ],
+          [
+            0.4764,
+            0.1329
+          ],
+          [
+            0.6116,
+            0.1329
+          ],
+          [
+            0.4764,
+            0.1477
+          ],
+          [
+            0.6134,
+            0.1477
+          ],
+          [
+            0.4764,
+            0.1634
+          ],
+          [
+            0.6162,
+            0.1653
+          ],
+          [
+            0.4764,
+            0.1792
+          ],
+          [
+            0.6171,
+            0.1792
+          ],
+          [
+            0.4764,
+            0.1949
+          ],
+          [
+            0.6171,
+            0.1949
+          ],
+          [
+            0.4764,
+            0.2106
+          ],
+          [
+            0.6171,
+            0.2106
+          ],
+          [
+            0.4764,
+            0.2264
+          ],
+          [
+            0.6171,
+            0.2264
+          ],
+          [
+            0.4764,
+            0.2421
+          ],
+          [
+            0.6264,
+            0.2421
+          ],
+          [
+            0.4764,
+            0.2579
+          ],
+          [
+            0.6282,
+            0.2579
+          ],
+          [
+            0.4764,
+            0.2727
+          ],
+          [
+            0.6301,
+            0.2727
+          ],
+          [
+            0.4764,
+            0.2884
+          ],
+          [
+            0.6319,
+            0.2884
+          ],
+          [
+            0.4764,
+            0.3042
+          ],
+          [
+            0.6329,
+            0.3042
+          ],
+          [
+            0.4764,
+            0.3199
+          ],
+          [
+            0.6329,
+            0.3199
+          ],
+          [
+            0.4764,
+            0.3356
+          ],
+          [
+            0.6329,
+            0.3356
+          ],
+          [
+            0.4764,
+            0.3514
+          ],
+          [
+            0.6412,
+            0.3532
+          ],
+          [
+            0.4773,
+            0.3671
+          ],
+          [
+            0.6431,
+            0.3671
+          ],
+          [
+            0.4773,
+            0.3829
+          ],
+          [
+            0.6449,
+            0.3829
+          ],
+          [
+            0.4782,
+            0.3977
+          ],
+          [
+            0.6468,
+            0.3977
+          ],
+          [
+            0.4782,
+            0.4125
+          ],
+          [
+            0.6477,
+            0.4134
+          ],
+          [
+            0.4792,
+            0.4292
+          ],
+          [
+            0.6477,
+            0.4292
+          ],
+          [
+            0.4801,
+            0.4449
+          ],
+          [
+            0.6477,
+            0.4449
+          ],
+          [
+            0.4801,
+            0.4606
+          ],
+          [
+            0.6449,
+            0.4569
+          ],
+          [
+            0.481,
+            0.4764
+          ],
+          [
+            0.4921,
+            0.4764
+          ],
+          [
+            0.5079,
+            0.4764
+          ],
+          [
+            0.5227,
+            0.4764
+          ],
+          [
+            0.5384,
+            0.4764
+          ],
+          [
+            0.5542,
+            0.4764
+          ],
+          [
+            0.5699,
+            0.4764
+          ],
+          [
+            0.5856,
+            0.4764
+          ],
+          [
+            0.6014,
+            0.4764
+          ],
+          [
+            0.6171,
+            0.4736
+          ],
+          [
+            0.6282,
+            0.469
+          ]
+        ],
+        "bbox": [
+          0.4676,
+          0.088,
+          0.6537,
+          0.4843
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-rgb-320-6530d41b59ff4270.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-rgb-480-35f95173ebd930a7.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-rgb-640-a2d4c676023eb43e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-d_fixed-320-9242e220529e0504.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-d_fixed-480-cd3c4f233483511b.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-d_fixed-640-e4aef0dffeb447c1.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-mask-320-bc58cbd5344748f0.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-mask-480-2565c6a08ad2d846.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-mask-640-0bbfbc47164f51a5.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-overlay-320-4b477e219e82e618.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-overlay-480-e23e6412088e3c50.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "62a418878cf85e505f63496fda34a09e-overlay-640-06ab27daeab69f93.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_458",
+      "class_name": "tricycle",
+      "source": "RIS-LAD",
+      "split": "test",
+      "view": "vertical_relative_height",
+      "expression_en": "The tricycle is black and white, with a person driving it. It is positioned on the left side of the image, near the bottom.",
+      "gloss_zh": "位于画面左侧靠近底部、由人驾驶的黑白两色三轮车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8AAAAAAAAAPwAAAAAAAIA/AAAAAAAAgB8AAAAAAACAHwAAAAAAAIAfAAAAAAAAgB8AAAAAAACAHwAAAAAAAAAfAAAAAAAAAB8AAAAAAAAAHwAAAAAAAAAfAAAAAAAAAB8AAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.1356,
+            0.4782
+          ],
+          [
+            0.1477,
+            0.4773
+          ],
+          [
+            0.1634,
+            0.4773
+          ],
+          [
+            0.1792,
+            0.4764
+          ],
+          [
+            0.1894,
+            0.4819
+          ],
+          [
+            0.1329,
+            0.4921
+          ],
+          [
+            0.2042,
+            0.4949
+          ],
+          [
+            0.1245,
+            0.5106
+          ],
+          [
+            0.2032,
+            0.5023
+          ],
+          [
+            0.1218,
+            0.5227
+          ],
+          [
+            0.1949,
+            0.5227
+          ],
+          [
+            0.1208,
+            0.5384
+          ],
+          [
+            0.1949,
+            0.5384
+          ],
+          [
+            0.1208,
+            0.5551
+          ],
+          [
+            0.1949,
+            0.5542
+          ],
+          [
+            0.1199,
+            0.5699
+          ],
+          [
+            0.1949,
+            0.5699
+          ],
+          [
+            0.1236,
+            0.5838
+          ],
+          [
+            0.1949,
+            0.5856
+          ],
+          [
+            0.1338,
+            0.6014
+          ],
+          [
+            0.1949,
+            0.6014
+          ],
+          [
+            0.1356,
+            0.6171
+          ],
+          [
+            0.1949,
+            0.6171
+          ],
+          [
+            0.1375,
+            0.6329
+          ],
+          [
+            0.1949,
+            0.6329
+          ],
+          [
+            0.1347,
+            0.6477
+          ],
+          [
+            0.194,
+            0.6477
+          ],
+          [
+            0.1375,
+            0.6597
+          ],
+          [
+            0.1477,
+            0.6634
+          ],
+          [
+            0.1921,
+            0.6634
+          ],
+          [
+            0.1634,
+            0.6792
+          ],
+          [
+            0.1718,
+            0.6745
+          ]
+        ],
+        "bbox": [
+          0.1194,
+          0.4759,
+          0.2056,
+          0.6833
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_458-rgb-320-38b726b3bb01b6bc.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_458-rgb-480-37027d92d503bf20.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_458-rgb-640-4b500a20f25da1c9.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_458-d_fixed-320-1ae0ba3ee787a456.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_458-d_fixed-480-5efd3392bbacc989.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_458-d_fixed-640-c369a620eb368043.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_458-mask-320-0eded4fb8100dd20.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_458-mask-480-60909c0da948a22c.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_458-mask-640-e660958138d11768.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_458-overlay-320-2b62b671d4456e11.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_458-overlay-480-1a2e20cc1fc49597.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_458-overlay-640-76327ef574fe2891.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "e9a59a93486e594c81a85216d3d925ee",
+      "class_name": "bus",
+      "source": "CODrone",
+      "split": "train",
+      "view": "vertical_relative_height",
+      "expression_en": "the large white bus in the lower right area of the street, positioned below the row of parked cars",
+      "gloss_zh": "位于街道右下方、停放车辆排下方的大型白色公共汽车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeB4AAAAAAID/PwAAAAAAwP8/AAAAAADA/z8AAAAAAMD/PwAAAAAAwP8/AAAAAACA/x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.6792,
+            0.7958
+          ],
+          [
+            0.6968,
+            0.7949
+          ],
+          [
+            0.7106,
+            0.7958
+          ],
+          [
+            0.7208,
+            0.7958
+          ],
+          [
+            0.7736,
+            0.7949
+          ],
+          [
+            0.7884,
+            0.7949
+          ],
+          [
+            0.8042,
+            0.7949
+          ],
+          [
+            0.8199,
+            0.7958
+          ],
+          [
+            0.6181,
+            0.8097
+          ],
+          [
+            0.6329,
+            0.8042
+          ],
+          [
+            0.6477,
+            0.8042
+          ],
+          [
+            0.6634,
+            0.8042
+          ],
+          [
+            0.7421,
+            0.8042
+          ],
+          [
+            0.7579,
+            0.8042
+          ],
+          [
+            0.8356,
+            0.8042
+          ],
+          [
+            0.6079,
+            0.8199
+          ],
+          [
+            0.8356,
+            0.8199
+          ],
+          [
+            0.6069,
+            0.8366
+          ],
+          [
+            0.8356,
+            0.8356
+          ],
+          [
+            0.6069,
+            0.8514
+          ],
+          [
+            0.8356,
+            0.8514
+          ],
+          [
+            0.6069,
+            0.8662
+          ],
+          [
+            0.8338,
+            0.8644
+          ],
+          [
+            0.6171,
+            0.8755
+          ],
+          [
+            0.6329,
+            0.8764
+          ],
+          [
+            0.6477,
+            0.8764
+          ],
+          [
+            0.6634,
+            0.8764
+          ],
+          [
+            0.6792,
+            0.8773
+          ],
+          [
+            0.6949,
+            0.8773
+          ],
+          [
+            0.7106,
+            0.8782
+          ],
+          [
+            0.7264,
+            0.8782
+          ],
+          [
+            0.7421,
+            0.8801
+          ],
+          [
+            0.7579,
+            0.8801
+          ],
+          [
+            0.7727,
+            0.881
+          ],
+          [
+            0.7884,
+            0.8829
+          ],
+          [
+            0.8042,
+            0.8829
+          ],
+          [
+            0.8199,
+            0.8819
+          ]
+        ],
+        "bbox": [
+          0.6065,
+          0.7944,
+          0.8389,
+          0.887
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-rgb-320-ff35e77801c40fd5.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-rgb-480-eb173c6de805db1a.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-rgb-640-4fbc8b3e10a2cec6.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-d_fixed-320-65055e598d2634ea.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-d_fixed-480-f86f019ebe431052.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-d_fixed-640-94f92997c152824a.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-mask-320-a1d5bc84ffa73b4a.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-mask-480-fb0d30ef8bcf956c.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-mask-640-4696bb182ded030e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-overlay-320-a7557de3a649dfa2.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-overlay-480-2c66d8a2e068fdbf.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "e9a59a93486e594c81a85216d3d925ee-overlay-640-e985de039323a47e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_2676",
+      "class_name": "people",
+      "source": "RIS-LAD",
+      "split": "val",
+      "view": "vertical_relative_height",
+      "expression_en": "The left of the two light-clothed riders on two-wheeled vehicles below the crosswalk.",
+      "gloss_zh": "位于人行横道下方、两名浅色衣物两轮车骑行者中左侧的一位。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAHAAAAAAAAgAcAAAAAAAAABwAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.1199,
+            0.8838
+          ],
+          [
+            0.1329,
+            0.8829
+          ],
+          [
+            0.1477,
+            0.8829
+          ],
+          [
+            0.156,
+            0.8866
+          ],
+          [
+            0.1218,
+            0.8968
+          ],
+          [
+            0.1606,
+            0.8977
+          ],
+          [
+            0.1329,
+            0.9134
+          ],
+          [
+            0.1477,
+            0.9134
+          ],
+          [
+            0.1625,
+            0.9134
+          ],
+          [
+            0.1588,
+            0.9218
+          ]
+        ],
+        "bbox": [
+          0.1185,
+          0.8769,
+          0.163,
+          0.9222
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_2676-rgb-320-c979e4b2878f39a7.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_2676-rgb-480-850689fbc21e3da1.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_2676-rgb-640-11239b337c120e10.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_2676-d_fixed-320-d13c3683870f6671.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_2676-d_fixed-480-180be70759864b77.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_2676-d_fixed-640-9e49b32c78c5d158.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_2676-mask-320-1a2268cc70e38b4c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_2676-mask-480-f903adfe2f0e3471.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_2676-mask-640-a447cbe4e9af5286.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_2676-overlay-320-529d22cb74b56983.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_2676-overlay-480-dc9385deb003de2f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_2676-overlay-640-08685dc6457e0ba0.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_4701",
+      "class_name": "motor",
+      "source": "RIS-LAD",
+      "split": "val",
+      "view": "vertical_relative_height",
+      "expression_en": "The motor is black and white, driven by a person, located near the center of the image, with a distinct pattern on its body.",
+      "gloss_zh": "位于画面中央附近、由骑手驾驶且车身带有明显花纹的黑白两色摩托车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAADAAQAAAAAAAOABAAAAAAAA4AEAAAAAAADAAQAAAAAAAMABAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.3532,
+            0.4181
+          ],
+          [
+            0.3616,
+            0.4199
+          ],
+          [
+            0.3514,
+            0.4292
+          ],
+          [
+            0.3773,
+            0.4366
+          ],
+          [
+            0.3403,
+            0.4477
+          ],
+          [
+            0.3829,
+            0.4449
+          ],
+          [
+            0.3412,
+            0.4579
+          ],
+          [
+            0.3829,
+            0.4606
+          ],
+          [
+            0.3514,
+            0.4764
+          ],
+          [
+            0.3773,
+            0.4764
+          ],
+          [
+            0.3542,
+            0.4894
+          ],
+          [
+            0.3782,
+            0.4921
+          ],
+          [
+            0.3681,
+            0.5032
+          ],
+          [
+            0.3764,
+            0.5005
+          ]
+        ],
+        "bbox": [
+          0.3389,
+          0.4176,
+          0.387,
+          0.5037
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_4701-rgb-320-032f4eb37776632f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_4701-rgb-480-65b44d488a3cdc96.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_4701-rgb-640-6d087ab50760baec.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_4701-d_fixed-320-e86a199d86e138d7.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_4701-d_fixed-480-4591a0f44ccae9c1.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_4701-d_fixed-640-23d103ef3b98bd89.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_4701-mask-320-99a1be8b9f1546b0.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_4701-mask-480-d5019fce01159ea6.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_4701-mask-640-bc56efa3744757af.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_4701-overlay-320-d2776d00edb9a9dc.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_4701-overlay-480-95b06768720bef82.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_4701-overlay-640-cad704eba20c7a84.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_10754",
+      "class_name": "bicycle",
+      "source": "RIS-LAD",
+      "split": "train",
+      "view": "vertical_relative_height",
+      "expression_en": "The bicycle is yellow and being ridden by a person near the bottom left corner of the image.",
+      "gloss_zh": "位于画面左下角附近、正被人骑行的黄色自行车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAADwAAAAAAAAAPgAAAAAAAAA/AAAAAAAAAD8AAAAAAAAAH4AAAAAAAAAPwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.4634,
+            0.8542
+          ],
+          [
+            0.4764,
+            0.8514
+          ],
+          [
+            0.4921,
+            0.8514
+          ],
+          [
+            0.4468,
+            0.869
+          ],
+          [
+            0.4875,
+            0.8671
+          ],
+          [
+            0.4329,
+            0.8856
+          ],
+          [
+            0.4921,
+            0.8829
+          ],
+          [
+            0.4199,
+            0.8968
+          ],
+          [
+            0.4921,
+            0.8977
+          ],
+          [
+            0.4171,
+            0.9199
+          ],
+          [
+            0.4894,
+            0.9106
+          ],
+          [
+            0.3986,
+            0.931
+          ],
+          [
+            0.4745,
+            0.9273
+          ],
+          [
+            0.3829,
+            0.9449
+          ],
+          [
+            0.3977,
+            0.9449
+          ],
+          [
+            0.4134,
+            0.9449
+          ],
+          [
+            0.4292,
+            0.9449
+          ],
+          [
+            0.4449,
+            0.9449
+          ],
+          [
+            0.4606,
+            0.9421
+          ],
+          [
+            0.3829,
+            0.9532
+          ]
+        ],
+        "bbox": [
+          0.3796,
+          0.8444,
+          0.4981,
+          0.9537
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_10754-rgb-320-9a158476865fa797.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10754-rgb-480-055df61c98f5b5db.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10754-rgb-640-8276a1290a380ed6.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_10754-d_fixed-320-dd23e9451af3ec97.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10754-d_fixed-480-31c62a468df85aa6.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10754-d_fixed-640-94c095daee41e79b.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_10754-mask-320-aa6f36903f28c37a.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10754-mask-480-640ad72f32379ebb.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10754-mask-640-0145ee580a84aab4.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_10754-overlay-320-f04ac49882a37b00.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10754-overlay-480-02a3b928a791db67.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10754-overlay-640-be2af2397a5f8d8f.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "b91d403d78a97304b85a7d54e63f51d5",
+      "class_name": "traffic-light",
+      "source": "CODrone",
+      "split": "test",
+      "view": "oblique_depth",
+      "expression_en": "The traffic light on the horizontal pole in the lower right, positioned to the left of its pair.",
+      "gloss_zh": "位于右下方横杆上、成对信号灯中左侧的那盏交通信号灯。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.7588,
+            0.7458
+          ],
+          [
+            0.769,
+            0.7477
+          ],
+          [
+            0.7579,
+            0.7579
+          ],
+          [
+            0.7727,
+            0.7579
+          ],
+          [
+            0.7579,
+            0.7727
+          ],
+          [
+            0.7727,
+            0.7727
+          ],
+          [
+            0.7579,
+            0.7884
+          ],
+          [
+            0.7727,
+            0.7884
+          ]
+        ],
+        "bbox": [
+          0.7528,
+          0.7454,
+          0.7778,
+          0.7954
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-rgb-320-060bd533e9aca2ea.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-rgb-480-bda160d0604d9112.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-rgb-640-39d24b97a47a5977.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-d_fixed-320-63ece02716dbfaab.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-d_fixed-480-8c68ffb1e7686ae4.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-d_fixed-640-c4fa701ff8fd9617.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-mask-320-8255f26038573be2.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-mask-480-9d45f89ef6851ef9.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-mask-640-8d3c6f19985dedd1.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-overlay-320-3c7060feb17c08a9.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-overlay-480-1b6aa4232e76ce8b.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "b91d403d78a97304b85a7d54e63f51d5-overlay-640-4a93256f7abe5dc0.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "08bae69c5a9f818c8fbc18a8aa35b904",
+      "class_name": "traffic-sign",
+      "source": "CODrone",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "the traffic sign with a red circular symbol on top and a blue square symbol below, located on the right side of the intersection",
+      "gloss_zh": "位于路口右侧、上方为红圈标志下方为蓝方标志的交通标志。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAABwAAAAAAAAAHAAAAAAAAAAcAAAAAAAAABwAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.6653,
+            0.6227
+          ],
+          [
+            0.6764,
+            0.6227
+          ],
+          [
+            0.6894,
+            0.6245
+          ],
+          [
+            0.6634,
+            0.6329
+          ],
+          [
+            0.6921,
+            0.6329
+          ],
+          [
+            0.6634,
+            0.6477
+          ],
+          [
+            0.6912,
+            0.6477
+          ],
+          [
+            0.6634,
+            0.6634
+          ],
+          [
+            0.6894,
+            0.6634
+          ],
+          [
+            0.6634,
+            0.6792
+          ],
+          [
+            0.6884,
+            0.6792
+          ],
+          [
+            0.6634,
+            0.6949
+          ],
+          [
+            0.6773,
+            0.6921
+          ]
+        ],
+        "bbox": [
+          0.6565,
+          0.6222,
+          0.6926,
+          0.7019
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-rgb-320-2b0155c01e614eae.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-rgb-480-82636fe6430f7228.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-rgb-640-31239d2c82eb6ea0.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-d_fixed-320-6f3e072ccec5f8d8.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-d_fixed-480-ffdd474eeb6adba6.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-d_fixed-640-278e94e4ccb0d16e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-mask-320-27d3912e6551da91.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-mask-480-4d903ff05e638173.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-mask-640-60bb46fd15f167bb.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-overlay-320-acb3ab830db2b82c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-overlay-480-6423ba0127ab1270.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "08bae69c5a9f818c8fbc18a8aa35b904-overlay-640-eb4987c63e1f4cf5.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_12256",
+      "class_name": "boat",
+      "source": "RIS-LAD",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "The white boat is a small-sized vessel located near the center-left of the image.",
+      "gloss_zh": "位于画面中左侧附近的小型白色船只。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAOABAAAAAAAA4AEAAAAAAADgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.3542,
+            0.3421
+          ],
+          [
+            0.3653,
+            0.3421
+          ],
+          [
+            0.3421,
+            0.3532
+          ],
+          [
+            0.3755,
+            0.356
+          ],
+          [
+            0.3384,
+            0.369
+          ],
+          [
+            0.3829,
+            0.3671
+          ],
+          [
+            0.3403,
+            0.3792
+          ],
+          [
+            0.3514,
+            0.3819
+          ],
+          [
+            0.3671,
+            0.3829
+          ],
+          [
+            0.3829,
+            0.3829
+          ]
+        ],
+        "bbox": [
+          0.338,
+          0.3407,
+          0.3898,
+          0.3852
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_12256-rgb-320-d4bb18a01bb661c0.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_12256-rgb-480-161c3f7570928198.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_12256-rgb-640-c8add1f64d2ec229.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_12256-d_fixed-320-50794870022aa035.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_12256-d_fixed-480-cf11bb55810f26a2.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_12256-d_fixed-640-2f9f40a636b897f9.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_12256-mask-320-69b00d2582a5c9af.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_12256-mask-480-fe190e7b0e118410.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_12256-mask-640-2dbe94c5bcd0fd2e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_12256-overlay-320-3f0ed75b3d2e082b.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_12256-overlay-480-40b2fd97d629236d.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_12256-overlay-640-a19de54045ea1dc0.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_9537",
+      "class_name": "ship",
+      "source": "RIS-LAD",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "The boat is white and large, positioned near the top-left of the image, with a distinctive black top structure.",
+      "gloss_zh": "位于画面左上方附近、顶部带有醒目黑色上层建筑的大型白色船舶。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAOAAAAAAAAAB4AAAAAAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.1949,
+            0.1014
+          ],
+          [
+            0.2051,
+            0.1023
+          ],
+          [
+            0.181,
+            0.1171
+          ],
+          [
+            0.2106,
+            0.1181
+          ],
+          [
+            0.1792,
+            0.1329
+          ],
+          [
+            0.2208,
+            0.1356
+          ],
+          [
+            0.1792,
+            0.1477
+          ],
+          [
+            0.2245,
+            0.1477
+          ],
+          [
+            0.1856,
+            0.1579
+          ],
+          [
+            0.1949,
+            0.1634
+          ],
+          [
+            0.2106,
+            0.1625
+          ],
+          [
+            0.2208,
+            0.1569
+          ]
+        ],
+        "bbox": [
+          0.1731,
+          0.0935,
+          0.225,
+          0.1639
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_9537-rgb-320-c8ac827968455ba3.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_9537-rgb-480-f8b9b6e3a4f1266e.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_9537-rgb-640-71054390d0a2e71e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_9537-d_fixed-320-850b810c099988cb.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_9537-d_fixed-480-98eef2ecc6d09aa9.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_9537-d_fixed-640-f3eeadd898daf67b.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_9537-mask-320-376b702e10971201.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_9537-mask-480-c05919e5b30f28c4.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_9537-mask-640-ee1b798c7132c2df.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_9537-overlay-320-d6b94863dc8c3dcf.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_9537-overlay-480-0370e816a2fdb08f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_9537-overlay-640-c68c91a642f1d887.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "05f7257a59cadba7b9640b5a360b5c51",
+      "class_name": "bridge",
+      "source": "CODrone",
+      "split": "test",
+      "view": "oblique_depth",
+      "expression_en": "the illuminated pedestrian bridge with a wavy red roof spanning the road",
+      "gloss_zh": "夜间亮灯、带有红色波浪形顶棚并横跨道路的人行天桥。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAP7/BwAAAOD///8PAAAA+P///w8AAOD/////HwAA4P////9/AOD///////8A4P///////wHg////////A8D5//////4HwPz//3/A5gPg//9/AADGA+D//wMAAAYD4P8HAAAAAgDgDwAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.5255,
+            0.0125
+          ],
+          [
+            0.5384,
+            0.0079
+          ],
+          [
+            0.5542,
+            0.0079
+          ],
+          [
+            0.5699,
+            0.0079
+          ],
+          [
+            0.5856,
+            0.0079
+          ],
+          [
+            0.6014,
+            0.0079
+          ],
+          [
+            0.6171,
+            0.0079
+          ],
+          [
+            0.6329,
+            0.0079
+          ],
+          [
+            0.6477,
+            0.0079
+          ],
+          [
+            0.6634,
+            0.0079
+          ],
+          [
+            0.6792,
+            0.0079
+          ],
+          [
+            0.6949,
+            0.0079
+          ],
+          [
+            0.7106,
+            0.0079
+          ],
+          [
+            0.7264,
+            0.0079
+          ],
+          [
+            0.7421,
+            0.0079
+          ],
+          [
+            0.7579,
+            0.0079
+          ],
+          [
+            0.7727,
+            0.0079
+          ],
+          [
+            0.7884,
+            0.0079
+          ],
+          [
+            0.3431,
+            0.0301
+          ],
+          [
+            0.3542,
+            0.0255
+          ],
+          [
+            0.3671,
+            0.0227
+          ],
+          [
+            0.3829,
+            0.0227
+          ],
+          [
+            0.3977,
+            0.0227
+          ],
+          [
+            0.4134,
+            0.0227
+          ],
+          [
+            0.4292,
+            0.0227
+          ],
+          [
+            0.4449,
+            0.0227
+          ],
+          [
+            0.4606,
+            0.0227
+          ],
+          [
+            0.4764,
+            0.0245
+          ],
+          [
+            0.4921,
+            0.0255
+          ],
+          [
+            0.5079,
+            0.0227
+          ],
+          [
+            0.8032,
+            0.0236
+          ],
+          [
+            0.3042,
+            0.044
+          ],
+          [
+            0.3199,
+            0.0394
+          ],
+          [
+            0.8042,
+            0.0384
+          ],
+          [
+            0.2106,
+            0.056
+          ],
+          [
+            0.2264,
+            0.0542
+          ],
+          [
+            0.2421,
+            0.0542
+          ],
+          [
+            0.2579,
+            0.0542
+          ],
+          [
+            0.2727,
+            0.0542
+          ],
+          [
+            0.2884,
+            0.0542
+          ],
+          [
+            0.8171,
+            0.0616
+          ],
+          [
+            0.2106,
+            0.0699
+          ],
+          [
+            0.8356,
+            0.0727
+          ],
+          [
+            0.8486,
+            0.0773
+          ],
+          [
+            0.0912,
+            0.0856
+          ],
+          [
+            0.1014,
+            0.0856
+          ],
+          [
+            0.1171,
+            0.0856
+          ],
+          [
+            0.1329,
+            0.0856
+          ],
+          [
+            0.1477,
+            0.0856
+          ],
+          [
+            0.1634,
+            0.0856
+          ],
+          [
+            0.1792,
+            0.0856
+          ],
+          [
+            0.1977,
+            0.0875
+          ],
+          [
+            0.8653,
+            0.0884
+          ],
+          [
+            0.0912,
+            0.1014
+          ],
+          [
+            0.8829,
+            0.1014
+          ],
+          [
+            0.0912,
+            0.1153
+          ],
+          [
+            0.1477,
+            0.1153
+          ],
+          [
+            0.1634,
+            0.1171
+          ],
+          [
+            0.7579,
+            0.1171
+          ],
+          [
+            0.8977,
+            0.1171
+          ],
+          [
+            0.1014,
+            0.1329
+          ],
+          [
+            0.1255,
+            0.1329
+          ],
+          [
+            0.1838,
+            0.1301
+          ],
+          [
+            0.6171,
+            0.1329
+          ],
+          [
+            0.6329,
+            0.1329
+          ],
+          [
+            0.6477,
+            0.1329
+          ],
+          [
+            0.6634,
+            0.1319
+          ],
+          [
+            0.6773,
+            0.1301
+          ],
+          [
+            0.694,
+            0.1282
+          ],
+          [
+            0.7088,
+            0.1264
+          ],
+          [
+            0.7412,
+            0.1319
+          ],
+          [
+            0.7727,
+            0.1329
+          ],
+          [
+            0.7986,
+            0.1273
+          ],
+          [
+            0.8208,
+            0.1329
+          ],
+          [
+            0.9088,
+            0.1273
+          ],
+          [
+            0.1014,
+            0.1477
+          ],
+          [
+            0.1171,
+            0.1477
+          ],
+          [
+            0.1662,
+            0.1551
+          ],
+          [
+            0.4921,
+            0.1477
+          ],
+          [
+            0.5079,
+            0.1477
+          ],
+          [
+            0.5227,
+            0.1477
+          ],
+          [
+            0.5384,
+            0.1477
+          ],
+          [
+            0.5532,
+            0.1458
+          ],
+          [
+            0.5699,
+            0.144
+          ],
+          [
+            0.5856,
+            0.1421
+          ],
+          [
+            0.6014,
+            0.1403
+          ],
+          [
+            0.7264,
+            0.1477
+          ],
+          [
+            0.7356,
+            0.1412
+          ],
+          [
+            0.7727,
+            0.1477
+          ],
+          [
+            0.7884,
+            0.1477
+          ],
+          [
+            0.8366,
+            0.1458
+          ],
+          [
+            0.8977,
+            0.1477
+          ],
+          [
+            0.0912,
+            0.169
+          ],
+          [
+            0.1329,
+            0.1634
+          ],
+          [
+            0.1477,
+            0.1634
+          ],
+          [
+            0.4134,
+            0.1634
+          ],
+          [
+            0.4292,
+            0.1634
+          ],
+          [
+            0.4449,
+            0.1634
+          ],
+          [
+            0.4606,
+            0.1606
+          ],
+          [
+            0.4764,
+            0.156
+          ],
+          [
+            0.7727,
+            0.1634
+          ],
+          [
+            0.7884,
+            0.1634
+          ],
+          [
+            0.8532,
+            0.1606
+          ],
+          [
+            0.8671,
+            0.1634
+          ],
+          [
+            0.8977,
+            0.1634
+          ],
+          [
+            0.0912,
+            0.1792
+          ],
+          [
+            0.3042,
+            0.1792
+          ],
+          [
+            0.3199,
+            0.1792
+          ],
+          [
+            0.3356,
+            0.1792
+          ],
+          [
+            0.3514,
+            0.1782
+          ],
+          [
+            0.3671,
+            0.1755
+          ],
+          [
+            0.381,
+            0.1736
+          ],
+          [
+            0.3931,
+            0.1718
+          ],
+          [
+            0.7727,
+            0.1792
+          ],
+          [
+            0.7884,
+            0.1792
+          ],
+          [
+            0.8819,
+            0.1745
+          ],
+          [
+            0.894,
+            0.1773
+          ],
+          [
+            0.0912,
+            0.1949
+          ],
+          [
+            0.1949,
+            0.1949
+          ],
+          [
+            0.2106,
+            0.1949
+          ],
+          [
+            0.2264,
+            0.194
+          ],
+          [
+            0.2412,
+            0.1921
+          ],
+          [
+            0.2597,
+            0.1912
+          ],
+          [
+            0.2727,
+            0.1921
+          ],
+          [
+            0.2856,
+            0.1884
+          ],
+          [
+            0.7755,
+            0.1875
+          ],
+          [
+            0.0912,
+            0.2106
+          ],
+          [
+            0.1329,
+            0.2106
+          ],
+          [
+            0.1477,
+            0.2106
+          ],
+          [
+            0.1634,
+            0.2069
+          ],
+          [
+            0.1792,
+            0.2032
+          ],
+          [
+            0.0912,
+            0.2264
+          ],
+          [
+            0.0986,
+            0.2236
+          ],
+          [
+            0.1171,
+            0.219
+          ]
+        ],
+        "bbox": [
+          0.0907,
+          0.0,
+          0.9093,
+          0.2287
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-rgb-320-f390a7f40796b6fb.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-rgb-480-a93cf61661e518db.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-rgb-640-a609eaa920e636df.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-d_fixed-320-f2ed225247e57778.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-d_fixed-480-134effcaa3f31308.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-d_fixed-640-8a7fd30e58dadea9.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-mask-320-e4b13d772300aca1.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-mask-480-875f86d6e6676e39.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-mask-640-0ebd33bcb2b02571.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-overlay-320-5e6b5cf879a16b59.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-overlay-480-30bad5dc2ef3efc5.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "05f7257a59cadba7b9640b5a360b5c51-overlay-640-0c106b915108bd5f.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "10d64463be7f9bf5dd4bc26e1150dc54",
+      "class_name": "building",
+      "source": "UAVid",
+      "split": "val",
+      "view": "oblique_depth",
+      "expression_en": "The small, standalone building with a pitched, tiled roof and light-colored stone walls, located next to the large tree and near the orange car.",
+      "gloss_zh": "毗邻大型建筑、带有坡面瓦顶与浅色石墙的小型独立建筑。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAHAAAAAAAA4A8AAAAAAAD4DwAAAAAAAPwPAAAAAAAA/A8AAAAAAAD8DwAAAAAAAPwPAAAAAAAA/A8AAAAAAAD8HwAAAAAAAPwfAAAAAAAA/h8AAAAAAAD+HwAAAAAAAPwfAAAAAAAA8B8AAAAAAADAHwAAAAAAAAAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.4792,
+            0.4625
+          ],
+          [
+            0.4921,
+            0.4606
+          ],
+          [
+            0.5079,
+            0.4606
+          ],
+          [
+            0.5227,
+            0.4634
+          ],
+          [
+            0.5356,
+            0.4671
+          ],
+          [
+            0.4625,
+            0.4773
+          ],
+          [
+            0.5514,
+            0.4773
+          ],
+          [
+            0.4366,
+            0.4995
+          ],
+          [
+            0.4449,
+            0.4921
+          ],
+          [
+            0.5542,
+            0.4921
+          ],
+          [
+            0.4199,
+            0.5134
+          ],
+          [
+            0.5542,
+            0.5079
+          ],
+          [
+            0.4134,
+            0.5227
+          ],
+          [
+            0.5542,
+            0.5227
+          ],
+          [
+            0.4171,
+            0.5347
+          ],
+          [
+            0.5542,
+            0.5384
+          ],
+          [
+            0.4162,
+            0.556
+          ],
+          [
+            0.5542,
+            0.5542
+          ],
+          [
+            0.4144,
+            0.5699
+          ],
+          [
+            0.5542,
+            0.5699
+          ],
+          [
+            0.4134,
+            0.5856
+          ],
+          [
+            0.5634,
+            0.5894
+          ],
+          [
+            0.4134,
+            0.6014
+          ],
+          [
+            0.5699,
+            0.6014
+          ],
+          [
+            0.4051,
+            0.6218
+          ],
+          [
+            0.5699,
+            0.6171
+          ],
+          [
+            0.4032,
+            0.6329
+          ],
+          [
+            0.5699,
+            0.6329
+          ],
+          [
+            0.4144,
+            0.6458
+          ],
+          [
+            0.4292,
+            0.6477
+          ],
+          [
+            0.5699,
+            0.6477
+          ],
+          [
+            0.4477,
+            0.6597
+          ],
+          [
+            0.4606,
+            0.6634
+          ],
+          [
+            0.569,
+            0.6634
+          ],
+          [
+            0.4792,
+            0.6727
+          ],
+          [
+            0.4921,
+            0.6782
+          ],
+          [
+            0.5671,
+            0.6792
+          ],
+          [
+            0.5144,
+            0.6875
+          ],
+          [
+            0.5255,
+            0.6921
+          ],
+          [
+            0.5384,
+            0.6949
+          ],
+          [
+            0.5542,
+            0.6949
+          ],
+          [
+            0.5653,
+            0.6912
+          ]
+        ],
+        "bbox": [
+          0.4028,
+          0.4528,
+          0.5759,
+          0.7
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-rgb-320-e38f340f0d3300e7.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-rgb-480-a7e7c39ca52af46f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-rgb-640-a03f35be8e5e7e8f.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-d_fixed-320-863e026d419cc361.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-d_fixed-480-f50dc320f0ac574e.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-d_fixed-640-98e9a3ce3939d789.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-mask-320-2fa77fba662d5904.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-mask-480-53c2409f5c9df119.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-mask-640-20b12a766c111e57.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-overlay-320-2c84452cda6572d0.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-overlay-480-9c1cdb5b4fc53bab.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "10d64463be7f9bf5dd4bc26e1150dc54-overlay-640-03b116e158c27b46.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "25a0debcaf7b1a003095c719e8659eb8",
+      "class_name": "animals",
+      "source": "DDOS",
+      "split": "test",
+      "view": "oblique_depth",
+      "expression_en": "A deer located in the open field near the corner of the grey-roofed building.",
+      "gloss_zh": "位于灰顶建筑转角附近开阔草地上的鹿。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAB4AAAAAAAAAGAAAAAAAAAAcAAAAAAAAABwAAAAAAAAAPAAAAAAAAAA8AAAAAAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.6813,
+            0.6521
+          ],
+          [
+            0.6965,
+            0.6535
+          ],
+          [
+            0.6854,
+            0.659
+          ],
+          [
+            0.6951,
+            0.6632
+          ],
+          [
+            0.7104,
+            0.6632
+          ],
+          [
+            0.7257,
+            0.6632
+          ],
+          [
+            0.7104,
+            0.6799
+          ],
+          [
+            0.7257,
+            0.6799
+          ],
+          [
+            0.7021,
+            0.6993
+          ],
+          [
+            0.7243,
+            0.6937
+          ],
+          [
+            0.6993,
+            0.7104
+          ],
+          [
+            0.7243,
+            0.7104
+          ],
+          [
+            0.6951,
+            0.7257
+          ],
+          [
+            0.7382,
+            0.7299
+          ],
+          [
+            0.7007,
+            0.7382
+          ],
+          [
+            0.7424,
+            0.734
+          ],
+          [
+            0.7118,
+            0.7576
+          ],
+          [
+            0.7257,
+            0.7576
+          ],
+          [
+            0.7174,
+            0.766
+          ],
+          [
+            0.7229,
+            0.7701
+          ]
+        ],
+        "bbox": [
+          0.6806,
+          0.6514,
+          0.7444,
+          0.7708
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-rgb-320-5878a5bfe796710b.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-rgb-480-b974736373ac9984.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-rgb-640-d085e436b617e97d.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-d_fixed-320-d843d5abcfa016e0.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-d_fixed-480-c42ef1659900ad5d.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-d_fixed-640-79c01648b5f3522a.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-mask-320-0459cd1bfbb37872.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-mask-480-4cd9dc361aca5550.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-mask-640-24a1e78f6858ffa4.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-overlay-320-8a0282c50bb4a38f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-overlay-480-0777ac77e363f376.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "25a0debcaf7b1a003095c719e8659eb8-overlay-640-25b399654007fbfe.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "eb5e2f3c3726caa476e571128912f9b0",
+      "class_name": "tree",
+      "source": "UAVPal",
+      "split": "test",
+      "view": "vertical_relative_height",
+      "expression_en": "The leafy green tree growing in the open courtyard area, situated between the building with the blue roof and the lower rooftop with a white satellite dish.",
+      "gloss_zh": "生长在蓝顶建筑与周边房屋之间开阔庭院里的茂密绿树。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AEAAAAAAAD+BwAAAAAAAP8HAAAAAAAA/wcAAAAAAAD/BwAAAAAAAP8HAAAAAAAA/g8AAAAAAAD+DwAAAAAAAPwPAAAAAAAA+A8AAAAAAADgDwAAAAAAAMAPAAAAAAAAgA8AAAAAAACADwAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.2903,
+            0.6051
+          ],
+          [
+            0.3042,
+            0.6023
+          ],
+          [
+            0.3199,
+            0.6014
+          ],
+          [
+            0.3356,
+            0.6014
+          ],
+          [
+            0.3514,
+            0.6042
+          ],
+          [
+            0.3662,
+            0.6069
+          ],
+          [
+            0.3755,
+            0.6088
+          ],
+          [
+            0.2764,
+            0.6199
+          ],
+          [
+            0.3977,
+            0.6171
+          ],
+          [
+            0.4134,
+            0.6171
+          ],
+          [
+            0.2616,
+            0.6366
+          ],
+          [
+            0.4134,
+            0.6329
+          ],
+          [
+            0.2579,
+            0.6477
+          ],
+          [
+            0.4134,
+            0.6477
+          ],
+          [
+            0.2588,
+            0.6634
+          ],
+          [
+            0.4134,
+            0.6634
+          ],
+          [
+            0.2644,
+            0.6745
+          ],
+          [
+            0.4134,
+            0.6792
+          ],
+          [
+            0.2736,
+            0.6949
+          ],
+          [
+            0.4218,
+            0.7014
+          ],
+          [
+            0.2801,
+            0.7079
+          ],
+          [
+            0.4227,
+            0.7106
+          ],
+          [
+            0.2903,
+            0.7255
+          ],
+          [
+            0.4245,
+            0.7264
+          ],
+          [
+            0.3079,
+            0.7347
+          ],
+          [
+            0.3199,
+            0.7412
+          ],
+          [
+            0.4264,
+            0.7421
+          ],
+          [
+            0.3421,
+            0.7505
+          ],
+          [
+            0.4282,
+            0.7579
+          ],
+          [
+            0.3569,
+            0.7727
+          ],
+          [
+            0.4292,
+            0.7727
+          ],
+          [
+            0.3671,
+            0.7884
+          ],
+          [
+            0.4292,
+            0.7884
+          ],
+          [
+            0.3708,
+            0.7977
+          ],
+          [
+            0.4292,
+            0.8042
+          ],
+          [
+            0.3875,
+            0.8125
+          ],
+          [
+            0.3977,
+            0.8199
+          ],
+          [
+            0.4134,
+            0.8199
+          ],
+          [
+            0.4292,
+            0.819
+          ]
+        ],
+        "bbox": [
+          0.2509,
+          0.5981,
+          0.4296,
+          0.8259
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-rgb-320-97edfa3bb1e7a2ce.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-rgb-480-d1c76f763c7fca6b.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-rgb-640-a2f11ab09822a4b9.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-d_fixed-320-d28ddf2b15ee84f5.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-d_fixed-480-9de706e6fcf2660c.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-d_fixed-640-297c6478c7d3bedb.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-mask-320-e58fcd6275a04c72.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-mask-480-058fd5a82608d92c.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-mask-640-52d6440c8e5f40f3.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-overlay-320-4d2131505ddc4eb3.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-overlay-480-040b7b3b59168c60.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "eb5e2f3c3726caa476e571128912f9b0-overlay-640-2eb7ff7355847ab4.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "50761669befedf12a93c02845f142834",
+      "class_name": "building",
+      "source": "FlyAwareV2",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "the building with the reddish-brown roof located in the middle of the residential block, between the road and the houses to its right",
+      "gloss_zh": "位于住宅街区中部、介于道路与右侧房屋之间的红褐色屋顶建筑。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAPh/AAAAAAAA+P8DAAAAAAD4/wcAAAAAAPj/BwAAAAAA/P8DAAAAAAD8/wMAAAAAAPz/AwAAAAAA/P8HAAAAAAD4/wcAAAAAAPD/BwAAAAAA8P8HAAAAAADw/wcAAAAAAPj/BwAAAAAA+P8HAAAAAAD4/wcAAAAAAPz/DwAAAAAA/P8PAAAAAAD8/w8AAAAAAPz/DwAAAAAA/P8PAAAAAAD8/w8AAAAAAPD/AQAAAAAAAPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.3097,
+            0.3875
+          ],
+          [
+            0.3199,
+            0.3884
+          ],
+          [
+            0.3292,
+            0.3894
+          ],
+          [
+            0.3106,
+            0.3977
+          ],
+          [
+            0.3514,
+            0.3977
+          ],
+          [
+            0.3671,
+            0.3977
+          ],
+          [
+            0.3829,
+            0.3977
+          ],
+          [
+            0.3977,
+            0.3977
+          ],
+          [
+            0.4134,
+            0.3986
+          ],
+          [
+            0.4292,
+            0.4005
+          ],
+          [
+            0.4449,
+            0.4023
+          ],
+          [
+            0.4606,
+            0.4042
+          ],
+          [
+            0.4745,
+            0.4051
+          ],
+          [
+            0.3079,
+            0.4181
+          ],
+          [
+            0.4921,
+            0.4134
+          ],
+          [
+            0.5079,
+            0.4134
+          ],
+          [
+            0.5218,
+            0.4153
+          ],
+          [
+            0.3051,
+            0.4292
+          ],
+          [
+            0.5319,
+            0.4292
+          ],
+          [
+            0.3042,
+            0.4449
+          ],
+          [
+            0.531,
+            0.4421
+          ],
+          [
+            0.294,
+            0.4616
+          ],
+          [
+            0.5227,
+            0.4606
+          ],
+          [
+            0.2912,
+            0.4764
+          ],
+          [
+            0.5227,
+            0.4764
+          ],
+          [
+            0.2894,
+            0.4921
+          ],
+          [
+            0.5227,
+            0.4921
+          ],
+          [
+            0.2903,
+            0.5079
+          ],
+          [
+            0.531,
+            0.5079
+          ],
+          [
+            0.3079,
+            0.5162
+          ],
+          [
+            0.5329,
+            0.5227
+          ],
+          [
+            0.3199,
+            0.5384
+          ],
+          [
+            0.5338,
+            0.5329
+          ],
+          [
+            0.3199,
+            0.5542
+          ],
+          [
+            0.5375,
+            0.556
+          ],
+          [
+            0.3199,
+            0.5699
+          ],
+          [
+            0.5384,
+            0.5699
+          ],
+          [
+            0.3051,
+            0.5912
+          ],
+          [
+            0.5384,
+            0.5856
+          ],
+          [
+            0.3051,
+            0.6014
+          ],
+          [
+            0.5384,
+            0.6014
+          ],
+          [
+            0.3042,
+            0.6171
+          ],
+          [
+            0.5384,
+            0.6171
+          ],
+          [
+            0.2958,
+            0.6394
+          ],
+          [
+            0.5505,
+            0.6347
+          ],
+          [
+            0.2894,
+            0.6477
+          ],
+          [
+            0.5542,
+            0.6477
+          ],
+          [
+            0.2884,
+            0.6634
+          ],
+          [
+            0.5542,
+            0.6634
+          ],
+          [
+            0.2884,
+            0.6792
+          ],
+          [
+            0.5542,
+            0.6792
+          ],
+          [
+            0.2884,
+            0.6949
+          ],
+          [
+            0.5542,
+            0.6949
+          ],
+          [
+            0.2884,
+            0.7106
+          ],
+          [
+            0.3042,
+            0.7106
+          ],
+          [
+            0.5227,
+            0.7106
+          ],
+          [
+            0.5384,
+            0.7106
+          ],
+          [
+            0.5532,
+            0.7106
+          ],
+          [
+            0.3227,
+            0.7199
+          ],
+          [
+            0.3356,
+            0.7218
+          ],
+          [
+            0.3514,
+            0.7236
+          ],
+          [
+            0.3671,
+            0.7255
+          ],
+          [
+            0.3829,
+            0.7264
+          ],
+          [
+            0.3977,
+            0.7264
+          ],
+          [
+            0.4134,
+            0.7264
+          ],
+          [
+            0.506,
+            0.7245
+          ],
+          [
+            0.4338,
+            0.7347
+          ],
+          [
+            0.4449,
+            0.7356
+          ],
+          [
+            0.4606,
+            0.7375
+          ],
+          [
+            0.4764,
+            0.7394
+          ],
+          [
+            0.4884,
+            0.7375
+          ]
+        ],
+        "bbox": [
+          0.2815,
+          0.387,
+          0.5611,
+          0.7407
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "50761669befedf12a93c02845f142834-rgb-320-1b336a0dd90d296e.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-rgb-480-8ba67aaeaf869e39.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-rgb-640-26d3d9c39a82c6d0.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "50761669befedf12a93c02845f142834-d_fixed-320-137d1d6242a4cda1.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-d_fixed-480-d297c84a92efcf5f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-d_fixed-640-1648e4963f7c38d6.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "50761669befedf12a93c02845f142834-mask-320-48a34bb31eae7ec4.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-mask-480-5fa5c03b21ecee37.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-mask-640-c8409b418716d3bd.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "50761669befedf12a93c02845f142834-overlay-320-59ceed2985474f9e.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-overlay-480-18b4869255641f1c.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "50761669befedf12a93c02845f142834-overlay-640-b5e74efbd6ab26da.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_10366",
+      "class_name": "car",
+      "source": "RIS-LAD",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "The white car on the road near the underpass entrance in the lower-right part of the image.",
+      "gloss_zh": "位于画面右下方下穿通道入口附近路面上的白色汽车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAB8AAAAAAACAHwAAAAAAAIAfAAAAAAAAgA8AAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.7616,
+            0.6866
+          ],
+          [
+            0.7727,
+            0.6838
+          ],
+          [
+            0.7884,
+            0.6847
+          ],
+          [
+            0.8014,
+            0.6866
+          ],
+          [
+            0.7579,
+            0.6949
+          ],
+          [
+            0.8181,
+            0.6968
+          ],
+          [
+            0.7477,
+            0.7116
+          ],
+          [
+            0.8171,
+            0.7097
+          ],
+          [
+            0.744,
+            0.7264
+          ],
+          [
+            0.8125,
+            0.7255
+          ],
+          [
+            0.7431,
+            0.7412
+          ],
+          [
+            0.7579,
+            0.7421
+          ],
+          [
+            0.7727,
+            0.7421
+          ],
+          [
+            0.8042,
+            0.7421
+          ],
+          [
+            0.7894,
+            0.7523
+          ],
+          [
+            0.8005,
+            0.7514
+          ]
+        ],
+        "bbox": [
+          0.7426,
+          0.6833,
+          0.8204,
+          0.7528
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_10366-rgb-320-a64a3841fa8337e9.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10366-rgb-480-1c22f8100b5f12ee.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10366-rgb-640-810030a0123ed2f1.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_10366-d_fixed-320-3816c06901d7e765.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10366-d_fixed-480-e3535fcb4a61458b.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10366-d_fixed-640-a662cd0d90c35597.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_10366-mask-320-3dac1fc5ba1861d6.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10366-mask-480-5046db69fdf36e67.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10366-mask-640-7a53bc7539fbd17d.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_10366-overlay-320-1ddf93913e185f3f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_10366-overlay-480-a7ee503f72850ca0.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_10366-overlay-640-6839464adbcc370b.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "184c17f73d524bbfe495a3981f322d9a",
+      "class_name": "bridge",
+      "source": "CODrone",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "the white arched pedestrian bridge spanning the highway, featuring a yellow banner with red text along its side and elevated ramps on both ends",
+      "gloss_zh": "横跨公路的白色拱形人行天桥，桥侧挂有黄底红字横幅，两端带有高架引坡。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD58AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP5/AAAAAAAA/n8AAAAAAAD+fwAAAAAAAP4/AAAAAAAA/D8AAAAAAAD8PwAAAAAAAPw/AID//z8A/B8A/v///w/8H/D///////8//////////////////////////////////////////////////wMA/x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.9042,
+            0.3431
+          ],
+          [
+            0.9134,
+            0.3403
+          ],
+          [
+            0.9292,
+            0.3394
+          ],
+          [
+            0.9431,
+            0.3394
+          ],
+          [
+            0.956,
+            0.3431
+          ],
+          [
+            0.0394,
+            0.356
+          ],
+          [
+            0.0551,
+            0.3542
+          ],
+          [
+            0.0699,
+            0.3532
+          ],
+          [
+            0.0847,
+            0.3542
+          ],
+          [
+            0.0995,
+            0.3569
+          ],
+          [
+            0.8866,
+            0.3569
+          ],
+          [
+            0.9764,
+            0.3514
+          ],
+          [
+            0.9866,
+            0.3569
+          ],
+          [
+            0.0106,
+            0.3708
+          ],
+          [
+            0.0227,
+            0.3671
+          ],
+          [
+            0.1125,
+            0.369
+          ],
+          [
+            0.8829,
+            0.3681
+          ],
+          [
+            0.9921,
+            0.3671
+          ],
+          [
+            0.0079,
+            0.3829
+          ],
+          [
+            0.1162,
+            0.3829
+          ],
+          [
+            0.8829,
+            0.3829
+          ],
+          [
+            0.9921,
+            0.3829
+          ],
+          [
+            0.0079,
+            0.3977
+          ],
+          [
+            0.1153,
+            0.3968
+          ],
+          [
+            0.8875,
+            0.3977
+          ],
+          [
+            0.9921,
+            0.3977
+          ],
+          [
+            0.0079,
+            0.4134
+          ],
+          [
+            0.1106,
+            0.4134
+          ],
+          [
+            0.8894,
+            0.4171
+          ],
+          [
+            0.9921,
+            0.4134
+          ],
+          [
+            0.0079,
+            0.4292
+          ],
+          [
+            0.1097,
+            0.4218
+          ],
+          [
+            0.8977,
+            0.4292
+          ],
+          [
+            0.9921,
+            0.4292
+          ],
+          [
+            0.0079,
+            0.4449
+          ],
+          [
+            0.1014,
+            0.4449
+          ],
+          [
+            0.8986,
+            0.4449
+          ],
+          [
+            0.9921,
+            0.4449
+          ],
+          [
+            0.0079,
+            0.4606
+          ],
+          [
+            0.0968,
+            0.4597
+          ],
+          [
+            0.9014,
+            0.4597
+          ],
+          [
+            0.9921,
+            0.4606
+          ],
+          [
+            0.0079,
+            0.4764
+          ],
+          [
+            0.094,
+            0.4755
+          ],
+          [
+            0.9042,
+            0.4745
+          ],
+          [
+            0.9921,
+            0.4764
+          ],
+          [
+            0.0079,
+            0.4921
+          ],
+          [
+            0.0856,
+            0.4921
+          ],
+          [
+            0.9134,
+            0.4921
+          ],
+          [
+            0.9921,
+            0.4921
+          ],
+          [
+            0.0079,
+            0.5079
+          ],
+          [
+            0.0856,
+            0.5079
+          ],
+          [
+            0.9181,
+            0.5079
+          ],
+          [
+            0.9921,
+            0.5079
+          ],
+          [
+            0.0079,
+            0.5227
+          ],
+          [
+            0.0819,
+            0.5218
+          ],
+          [
+            0.9208,
+            0.5181
+          ],
+          [
+            0.9921,
+            0.5227
+          ],
+          [
+            0.0079,
+            0.5384
+          ],
+          [
+            0.0782,
+            0.531
+          ],
+          [
+            0.3671,
+            0.5458
+          ],
+          [
+            0.3856,
+            0.5431
+          ],
+          [
+            0.3977,
+            0.5412
+          ],
+          [
+            0.4134,
+            0.5394
+          ],
+          [
+            0.4292,
+            0.5384
+          ],
+          [
+            0.4449,
+            0.5384
+          ],
+          [
+            0.4606,
+            0.5384
+          ],
+          [
+            0.4764,
+            0.5384
+          ],
+          [
+            0.4921,
+            0.5384
+          ],
+          [
+            0.5079,
+            0.5384
+          ],
+          [
+            0.5227,
+            0.5384
+          ],
+          [
+            0.5384,
+            0.5384
+          ],
+          [
+            0.5542,
+            0.5384
+          ],
+          [
+            0.5699,
+            0.5384
+          ],
+          [
+            0.5856,
+            0.5384
+          ],
+          [
+            0.6014,
+            0.5384
+          ],
+          [
+            0.6171,
+            0.5384
+          ],
+          [
+            0.6329,
+            0.5384
+          ],
+          [
+            0.6468,
+            0.5394
+          ],
+          [
+            0.6634,
+            0.5412
+          ],
+          [
+            0.6792,
+            0.5431
+          ],
+          [
+            0.6931,
+            0.544
+          ],
+          [
+            0.7069,
+            0.5458
+          ],
+          [
+            0.919,
+            0.5384
+          ],
+          [
+            0.9921,
+            0.5384
+          ],
+          [
+            0.0079,
+            0.5542
+          ],
+          [
+            0.069,
+            0.5532
+          ],
+          [
+            0.2736,
+            0.5606
+          ],
+          [
+            0.2884,
+            0.5579
+          ],
+          [
+            0.3051,
+            0.5551
+          ],
+          [
+            0.3199,
+            0.5542
+          ],
+          [
+            0.3356,
+            0.5542
+          ],
+          [
+            0.3514,
+            0.5542
+          ],
+          [
+            0.7264,
+            0.5542
+          ],
+          [
+            0.7421,
+            0.5542
+          ],
+          [
+            0.7579,
+            0.5542
+          ],
+          [
+            0.7718,
+            0.5551
+          ],
+          [
+            0.7884,
+            0.5588
+          ],
+          [
+            0.8042,
+            0.5606
+          ],
+          [
+            0.9208,
+            0.5505
+          ],
+          [
+            0.9921,
+            0.5542
+          ],
+          [
+            0.0079,
+            0.5699
+          ],
+          [
+            0.0653,
+            0.5727
+          ],
+          [
+            0.1995,
+            0.5773
+          ],
+          [
+            0.2125,
+            0.5736
+          ],
+          [
+            0.2273,
+            0.5708
+          ],
+          [
+            0.2421,
+            0.5699
+          ],
+          [
+            0.2579,
+            0.5699
+          ],
+          [
+            0.8199,
+            0.5699
+          ],
+          [
+            0.8356,
+            0.5699
+          ],
+          [
+            0.8514,
+            0.5718
+          ],
+          [
+            0.8671,
+            0.5736
+          ],
+          [
+            0.8829,
+            0.5736
+          ],
+          [
+            0.8977,
+            0.5718
+          ],
+          [
+            0.9921,
+            0.5699
+          ],
+          [
+            0.0079,
+            0.5856
+          ],
+          [
+            0.0847,
+            0.5931
+          ],
+          [
+            0.1329,
+            0.5931
+          ],
+          [
+            0.1505,
+            0.5884
+          ],
+          [
+            0.1634,
+            0.5866
+          ],
+          [
+            0.1792,
+            0.5856
+          ],
+          [
+            0.9921,
+            0.5856
+          ],
+          [
+            0.0079,
+            0.6014
+          ],
+          [
+            0.1014,
+            0.6014
+          ],
+          [
+            0.1171,
+            0.6014
+          ],
+          [
+            0.9921,
+            0.6014
+          ],
+          [
+            0.0079,
+            0.6171
+          ],
+          [
+            0.9921,
+            0.6171
+          ],
+          [
+            0.0079,
+            0.6329
+          ],
+          [
+            0.7884,
+            0.6329
+          ],
+          [
+            0.8042,
+            0.6329
+          ],
+          [
+            0.8199,
+            0.6329
+          ],
+          [
+            0.8356,
+            0.6329
+          ],
+          [
+            0.8514,
+            0.6329
+          ],
+          [
+            0.8671,
+            0.6329
+          ],
+          [
+            0.8829,
+            0.6329
+          ],
+          [
+            0.8977,
+            0.6329
+          ],
+          [
+            0.9134,
+            0.6329
+          ],
+          [
+            0.9292,
+            0.6329
+          ],
+          [
+            0.9449,
+            0.6329
+          ],
+          [
+            0.9606,
+            0.6329
+          ],
+          [
+            0.9764,
+            0.6329
+          ],
+          [
+            0.9921,
+            0.6329
+          ],
+          [
+            0.0079,
+            0.6477
+          ],
+          [
+            0.2106,
+            0.6477
+          ],
+          [
+            0.2264,
+            0.6477
+          ],
+          [
+            0.2421,
+            0.6477
+          ],
+          [
+            0.2579,
+            0.6477
+          ],
+          [
+            0.2727,
+            0.6477
+          ],
+          [
+            0.2884,
+            0.6477
+          ],
+          [
+            0.3042,
+            0.6477
+          ],
+          [
+            0.3199,
+            0.6477
+          ],
+          [
+            0.3356,
+            0.6477
+          ],
+          [
+            0.3514,
+            0.6477
+          ],
+          [
+            0.3671,
+            0.6477
+          ],
+          [
+            0.3829,
+            0.6477
+          ],
+          [
+            0.3977,
+            0.6477
+          ],
+          [
+            0.4134,
+            0.6477
+          ],
+          [
+            0.4292,
+            0.6477
+          ],
+          [
+            0.4449,
+            0.6477
+          ],
+          [
+            0.4606,
+            0.6477
+          ],
+          [
+            0.4764,
+            0.6477
+          ],
+          [
+            0.4921,
+            0.6477
+          ],
+          [
+            0.5079,
+            0.6477
+          ],
+          [
+            0.5227,
+            0.6477
+          ],
+          [
+            0.5384,
+            0.6468
+          ],
+          [
+            0.5542,
+            0.6468
+          ],
+          [
+            0.5699,
+            0.6458
+          ],
+          [
+            0.5856,
+            0.6458
+          ],
+          [
+            0.6014,
+            0.6449
+          ],
+          [
+            0.6171,
+            0.6449
+          ],
+          [
+            0.6329,
+            0.644
+          ],
+          [
+            0.6458,
+            0.644
+          ],
+          [
+            0.6634,
+            0.6431
+          ],
+          [
+            0.6792,
+            0.6431
+          ],
+          [
+            0.6949,
+            0.6421
+          ],
+          [
+            0.7106,
+            0.6421
+          ],
+          [
+            0.7264,
+            0.6412
+          ],
+          [
+            0.7421,
+            0.6412
+          ],
+          [
+            0.7579,
+            0.6403
+          ],
+          [
+            0.7727,
+            0.6403
+          ],
+          [
+            0.0079,
+            0.6579
+          ],
+          [
+            0.0245,
+            0.6606
+          ],
+          [
+            0.0384,
+            0.6597
+          ],
+          [
+            0.0542,
+            0.6579
+          ],
+          [
+            0.0699,
+            0.6579
+          ],
+          [
+            0.0856,
+            0.6579
+          ],
+          [
+            0.1014,
+            0.6569
+          ],
+          [
+            0.1171,
+            0.6569
+          ],
+          [
+            0.1329,
+            0.6569
+          ],
+          [
+            0.1477,
+            0.656
+          ],
+          [
+            0.1634,
+            0.656
+          ],
+          [
+            0.1792,
+            0.656
+          ],
+          [
+            0.1921,
+            0.656
+          ]
+        ],
+        "bbox": [
+          0.0,
+          0.3389,
+          1.0,
+          0.6611
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-rgb-320-38add1e956d35132.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-rgb-480-4bdec824b62eea07.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-rgb-640-58836496d0ae1622.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-d_fixed-320-72f822fdfe8fd56c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-d_fixed-480-025b5e8d5bef106a.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-d_fixed-640-daef6f0047788535.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-mask-320-bec32b693803287c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-mask-480-c81091da12b8a589.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-mask-640-9af9789ceaa96d9f.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-overlay-320-1f5c6e2b40c54bf7.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-overlay-480-987db1debd94629f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "184c17f73d524bbfe495a3981f322d9a-overlay-640-cd0a02e281062f4e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "native_11460",
+      "class_name": "truck",
+      "source": "RIS-LAD",
+      "split": "val",
+      "view": "vertical_relative_height",
+      "expression_en": "The red box truck near the center of the image.",
+      "gloss_zh": "位于画面中央附近的红色厢式货车。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAAAAAAD+/wcAAAAAAP7/BwAAAAAA/v8HAAAAAAD+/wcAAAAAAP7/BwAAAAAA/v8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.4051,
+            0.4338
+          ],
+          [
+            0.4134,
+            0.431
+          ],
+          [
+            0.4292,
+            0.4301
+          ],
+          [
+            0.4449,
+            0.4301
+          ],
+          [
+            0.4606,
+            0.4301
+          ],
+          [
+            0.4764,
+            0.4301
+          ],
+          [
+            0.4921,
+            0.4301
+          ],
+          [
+            0.5079,
+            0.4301
+          ],
+          [
+            0.5227,
+            0.4301
+          ],
+          [
+            0.5384,
+            0.4301
+          ],
+          [
+            0.5542,
+            0.4301
+          ],
+          [
+            0.5699,
+            0.4301
+          ],
+          [
+            0.5856,
+            0.4301
+          ],
+          [
+            0.5968,
+            0.4319
+          ],
+          [
+            0.3995,
+            0.4449
+          ],
+          [
+            0.6171,
+            0.4449
+          ],
+          [
+            0.6329,
+            0.4449
+          ],
+          [
+            0.6477,
+            0.4449
+          ],
+          [
+            0.6625,
+            0.4468
+          ],
+          [
+            0.3986,
+            0.4597
+          ],
+          [
+            0.6634,
+            0.4606
+          ],
+          [
+            0.3995,
+            0.4764
+          ],
+          [
+            0.6634,
+            0.4764
+          ],
+          [
+            0.4005,
+            0.4903
+          ],
+          [
+            0.6634,
+            0.4921
+          ],
+          [
+            0.3995,
+            0.506
+          ],
+          [
+            0.6616,
+            0.5069
+          ],
+          [
+            0.4042,
+            0.5171
+          ],
+          [
+            0.4134,
+            0.5218
+          ],
+          [
+            0.4292,
+            0.5218
+          ],
+          [
+            0.4449,
+            0.5227
+          ],
+          [
+            0.4606,
+            0.5227
+          ],
+          [
+            0.4764,
+            0.5227
+          ],
+          [
+            0.4921,
+            0.5227
+          ],
+          [
+            0.5079,
+            0.5218
+          ],
+          [
+            0.5227,
+            0.5218
+          ],
+          [
+            0.5384,
+            0.5227
+          ],
+          [
+            0.5542,
+            0.5218
+          ],
+          [
+            0.5699,
+            0.5218
+          ],
+          [
+            0.5856,
+            0.5218
+          ],
+          [
+            0.5977,
+            0.519
+          ],
+          [
+            0.6171,
+            0.5153
+          ],
+          [
+            0.6329,
+            0.5153
+          ],
+          [
+            0.6477,
+            0.5153
+          ]
+        ],
+        "bbox": [
+          0.3981,
+          0.4296,
+          0.6657,
+          0.5231
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "native_11460-rgb-320-6975fc66be50a27f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_11460-rgb-480-900ee69687c24a5f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_11460-rgb-640-0f53d75757903b3f.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "native_11460-d_fixed-320-2f0268070bb5b37c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_11460-d_fixed-480-fd8dd97506cf3298.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_11460-d_fixed-640-efe6de851a6b070b.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "native_11460-mask-320-73800bae49b940ce.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_11460-mask-480-f662261067989177.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_11460-mask-640-dfecee4059c643f4.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "native_11460-overlay-320-e880ec80dde20975.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "native_11460-overlay-480-e455576c998c19b5.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "native_11460-overlay-640-ea82d103976ec2c7.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "a142ce169f73e446da479a280a7dceb7",
+      "class_name": "building",
+      "source": "DDOS",
+      "split": "train",
+      "view": "oblique_depth",
+      "expression_en": "the two-story house with a dark roof and dormer window, situated behind a long green hedge",
+      "gloss_zh": "位于长条绿篱后方、带有深色屋顶和老虎窗的两层住宅。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAEAAAAAAADgBwAAAAAAAPgfAAAAAAAA/P8AAAAAAAD//wMAAAAAgP//HwAAAACA//9/AAAAAAD///8BAAAAgP///wMAAACA////BwAAAID///8PAAAAAP///x8AAAAA/P//PwAAAAD4//8/AAAAAOD//38AAAAAgP///wAAAAAA/v//AQAAAAD4//8BAAAAAPD//wAAAAAAwP//AAAAAAAA/38AAAAAAAD8fwAAAAAAAPAfAAAAAAAA4AcAAAAAAACAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.3549,
+            0.3243
+          ],
+          [
+            0.366,
+            0.3215
+          ],
+          [
+            0.3799,
+            0.3271
+          ],
+          [
+            0.3368,
+            0.3368
+          ],
+          [
+            0.3979,
+            0.3354
+          ],
+          [
+            0.4132,
+            0.341
+          ],
+          [
+            0.309,
+            0.3563
+          ],
+          [
+            0.3201,
+            0.3507
+          ],
+          [
+            0.4299,
+            0.3507
+          ],
+          [
+            0.4451,
+            0.3549
+          ],
+          [
+            0.291,
+            0.3688
+          ],
+          [
+            0.4604,
+            0.3674
+          ],
+          [
+            0.4757,
+            0.3674
+          ],
+          [
+            0.4882,
+            0.3729
+          ],
+          [
+            0.2618,
+            0.3896
+          ],
+          [
+            0.2729,
+            0.3826
+          ],
+          [
+            0.5076,
+            0.3826
+          ],
+          [
+            0.5215,
+            0.3868
+          ],
+          [
+            0.2424,
+            0.4007
+          ],
+          [
+            0.5382,
+            0.3979
+          ],
+          [
+            0.5549,
+            0.4007
+          ],
+          [
+            0.5646,
+            0.4049
+          ],
+          [
+            0.2493,
+            0.4062
+          ],
+          [
+            0.5854,
+            0.4146
+          ],
+          [
+            0.6007,
+            0.4201
+          ],
+          [
+            0.2576,
+            0.4299
+          ],
+          [
+            0.6174,
+            0.4299
+          ],
+          [
+            0.6326,
+            0.434
+          ],
+          [
+            0.2479,
+            0.4493
+          ],
+          [
+            0.6479,
+            0.4451
+          ],
+          [
+            0.2451,
+            0.4604
+          ],
+          [
+            0.6618,
+            0.4618
+          ],
+          [
+            0.2424,
+            0.4757
+          ],
+          [
+            0.6771,
+            0.4799
+          ],
+          [
+            0.2604,
+            0.4896
+          ],
+          [
+            0.2729,
+            0.4924
+          ],
+          [
+            0.691,
+            0.4965
+          ],
+          [
+            0.291,
+            0.5062
+          ],
+          [
+            0.7049,
+            0.5132
+          ],
+          [
+            0.309,
+            0.516
+          ],
+          [
+            0.3215,
+            0.5229
+          ],
+          [
+            0.7104,
+            0.5229
+          ],
+          [
+            0.3396,
+            0.5326
+          ],
+          [
+            0.3507,
+            0.5382
+          ],
+          [
+            0.7257,
+            0.5396
+          ],
+          [
+            0.3701,
+            0.5479
+          ],
+          [
+            0.3826,
+            0.5549
+          ],
+          [
+            0.7396,
+            0.5563
+          ],
+          [
+            0.4007,
+            0.566
+          ],
+          [
+            0.4132,
+            0.5701
+          ],
+          [
+            0.7549,
+            0.5743
+          ],
+          [
+            0.4326,
+            0.584
+          ],
+          [
+            0.7576,
+            0.5826
+          ],
+          [
+            0.4507,
+            0.5938
+          ],
+          [
+            0.4604,
+            0.5993
+          ],
+          [
+            0.7396,
+            0.6007
+          ],
+          [
+            0.4813,
+            0.6104
+          ],
+          [
+            0.4924,
+            0.616
+          ],
+          [
+            0.734,
+            0.6146
+          ],
+          [
+            0.5118,
+            0.6271
+          ],
+          [
+            0.5229,
+            0.6326
+          ],
+          [
+            0.7257,
+            0.6326
+          ],
+          [
+            0.5424,
+            0.6438
+          ],
+          [
+            0.5549,
+            0.6479
+          ],
+          [
+            0.709,
+            0.6438
+          ],
+          [
+            0.7229,
+            0.641
+          ],
+          [
+            0.5729,
+            0.6604
+          ],
+          [
+            0.6799,
+            0.6632
+          ],
+          [
+            0.6924,
+            0.6562
+          ],
+          [
+            0.5924,
+            0.6715
+          ],
+          [
+            0.6035,
+            0.6771
+          ],
+          [
+            0.6576,
+            0.6826
+          ],
+          [
+            0.6229,
+            0.6882
+          ],
+          [
+            0.6299,
+            0.691
+          ],
+          [
+            0.6438,
+            0.6896
+          ]
+        ],
+        "bbox": [
+          0.2403,
+          0.3194,
+          0.7597,
+          0.6917
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-rgb-320-4c20e6f6448c4a9c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-rgb-480-7c18d62810175b9f.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-rgb-640-6033639c7faa34c6.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-d_fixed-320-4a81c9600a4014ef.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-d_fixed-480-d6adf9e9cbd8b4d0.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-d_fixed-640-62c9b9f1b05714da.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-mask-320-9ba702937f1817a2.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-mask-480-7000986c5918a905.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-mask-640-dcc6618a547bd582.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-overlay-320-1284a97dfcf62b8e.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-overlay-480-4ba85af54efad427.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "a142ce169f73e446da479a280a7dceb7-overlay-640-8ef9627db71aa2e3.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    },
+    {
+      "id": "2130d457299668d683bee3bbc26a025d",
+      "class_name": "tree",
+      "source": "UAVPal",
+      "split": "train",
+      "view": "vertical_relative_height",
+      "expression_en": "the palm tree with yellowish-green fronds located at the edge of the red-tiled courtyard",
+      "gloss_zh": "位于红瓦庭院边缘、枝叶呈黄绿色的棕榈树。",
+      "target_region": {
+        "grid": 64,
+        "occupancy": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwB8AAAAAAADgHwAAAAAAAPAfAAAAAAAA+B8AAAAAAAD4PwAAAAAAAPg/AAAAAAAA+D8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA8D8AAAAAAADAPwAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "anchors": [
+          [
+            0.3532,
+            0.5588
+          ],
+          [
+            0.3671,
+            0.5542
+          ],
+          [
+            0.3829,
+            0.5542
+          ],
+          [
+            0.3977,
+            0.5542
+          ],
+          [
+            0.4134,
+            0.5542
+          ],
+          [
+            0.4292,
+            0.5542
+          ],
+          [
+            0.4375,
+            0.5569
+          ],
+          [
+            0.3366,
+            0.5708
+          ],
+          [
+            0.4421,
+            0.5718
+          ],
+          [
+            0.3199,
+            0.5856
+          ],
+          [
+            0.4449,
+            0.5856
+          ],
+          [
+            0.3116,
+            0.6032
+          ],
+          [
+            0.4449,
+            0.6014
+          ],
+          [
+            0.306,
+            0.6181
+          ],
+          [
+            0.4551,
+            0.6199
+          ],
+          [
+            0.3042,
+            0.6329
+          ],
+          [
+            0.4588,
+            0.6329
+          ],
+          [
+            0.3042,
+            0.6477
+          ],
+          [
+            0.4606,
+            0.6477
+          ],
+          [
+            0.3069,
+            0.6634
+          ],
+          [
+            0.469,
+            0.669
+          ],
+          [
+            0.3106,
+            0.6792
+          ],
+          [
+            0.4699,
+            0.6782
+          ],
+          [
+            0.3227,
+            0.6931
+          ],
+          [
+            0.3356,
+            0.6949
+          ],
+          [
+            0.4606,
+            0.6949
+          ],
+          [
+            0.3532,
+            0.7051
+          ],
+          [
+            0.3671,
+            0.7088
+          ],
+          [
+            0.3829,
+            0.7106
+          ],
+          [
+            0.4134,
+            0.7106
+          ],
+          [
+            0.4292,
+            0.7106
+          ],
+          [
+            0.4449,
+            0.7106
+          ],
+          [
+            0.4579,
+            0.7106
+          ],
+          [
+            0.3986,
+            0.719
+          ]
+        ],
+        "bbox": [
+          0.2991,
+          0.5463,
+          0.4713,
+          0.7194
+        ]
+      },
+      "assets": {
+        "rgb": [
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-rgb-320-cb7ec7f0af905bc5.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-rgb-480-5be3a0f41c39cc6b.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-rgb-640-dc054c683be78a19.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "d_fixed": [
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-d_fixed-320-62131ed2d81f3128.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-d_fixed-480-6522ff6f0b217088.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-d_fixed-640-b3d981e1fcf93d38.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "mask": [
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-mask-320-4d6b2c02d8723a0c.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-mask-480-0667b7730c932526.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-mask-640-61cf01fbfe80d06e.webp",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        "overlay": [
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-overlay-320-4425289e46303c9f.webp",
+            "width": 320,
+            "height": 320
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-overlay-480-d365c5c28ca7df17.webp",
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "2130d457299668d683bee3bbc26a025d-overlay-640-8232d5c9255bd236.webp",
+            "width": 640,
+            "height": 640
+          }
+        ]
+      }
+    }
+  ]
+}

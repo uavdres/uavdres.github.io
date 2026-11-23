@@ -1,0 +1,182 @@
+{
+  "dataset": "UAV-DRES",
+  "audit": {
+    "actual_population": 18140,
+    "unique_rgb_paths": 11322,
+    "unique_groups": 6278,
+    "metadata_sha256": {
+      "metadata/train.jsonl": "743061c1f6f5762b280bcee0117738c2e1ecfa7893d665e3d6a3559c9882f2f5",
+      "metadata/val.jsonl": "d5e56016b405fb6a65006671953a86af35a42aa38c32a4d4535962548f55870e",
+      "metadata/test.jsonl": "cb2d7d8936b3ddfe39030e840cbd35dcb440d0e2479e175132b4915dcd37ccbc",
+      "metadata/geometry.json": "5fda0820c7057c30ffbc6676e8d227bbb5917fe64d56e8dbc04ca0b189dc1536",
+      "metadata/mask_edits.json": "db62753266f3f4ee8652f9b687f28ae1559b92d8fff1553f4ed251ad2bb817c4",
+      "metadata/native_rle.json": "8460925cab749e7a9c258f2f7592465bcfaedaf09923dab32cd1efb3cdb28560"
+    },
+    "counts": {
+      "class": {
+        "animals": 82,
+        "bicycle": 255,
+        "boat": 375,
+        "bridge": 19,
+        "building": 2217,
+        "bus": 846,
+        "car": 6201,
+        "motor": 1307,
+        "people": 2080,
+        "ship": 48,
+        "traffic-light": 344,
+        "traffic-sign": 1200,
+        "tree": 76,
+        "tricycle": 463,
+        "truck": 2627
+      },
+      "source": {
+        "CODrone": 9926,
+        "DDOS": 520,
+        "FlyAwareV2": 1775,
+        "RIS-LAD": 5475,
+        "UAVPal": 203,
+        "UAVid": 241
+      },
+      "split": {
+        "train": 14536,
+        "val": 1829,
+        "test": 1775
+      },
+      "D_role": {
+        "oblique_depth": 10908,
+        "vertical_relative_height": 7232
+      },
+      "source_direction": {
+        "larger_is_higher_relative": 7232,
+        "smaller_is_nearer": 10908
+      }
+    },
+    "class_split_counts": {
+      "animals": {
+        "train": 66,
+        "val": 8,
+        "test": 8
+      },
+      "bicycle": {
+        "train": 221,
+        "val": 18,
+        "test": 16
+      },
+      "boat": {
+        "train": 300,
+        "val": 56,
+        "test": 19
+      },
+      "bridge": {
+        "train": 15,
+        "val": 2,
+        "test": 2
+      },
+      "building": {
+        "train": 1867,
+        "val": 218,
+        "test": 132
+      },
+      "bus": {
+        "train": 680,
+        "val": 81,
+        "test": 85
+      },
+      "car": {
+        "train": 4945,
+        "val": 580,
+        "test": 676
+      },
+      "motor": {
+        "train": 1052,
+        "val": 159,
+        "test": 96
+      },
+      "people": {
+        "train": 1614,
+        "val": 216,
+        "test": 250
+      },
+      "ship": {
+        "train": 34,
+        "val": 5,
+        "test": 9
+      },
+      "traffic-light": {
+        "train": 271,
+        "val": 32,
+        "test": 41
+      },
+      "traffic-sign": {
+        "train": 946,
+        "val": 120,
+        "test": 134
+      },
+      "tree": {
+        "train": 60,
+        "val": 8,
+        "test": 8
+      },
+      "tricycle": {
+        "train": 375,
+        "val": 46,
+        "test": 42
+      },
+      "truck": {
+        "train": 2090,
+        "val": 280,
+        "test": 257
+      }
+    },
+    "source_split_counts": {
+      "CODrone": {
+        "train": 7894,
+        "val": 989,
+        "test": 1043
+      },
+      "DDOS": {
+        "train": 412,
+        "val": 48,
+        "test": 60
+      },
+      "FlyAwareV2": {
+        "train": 1492,
+        "val": 162,
+        "test": 121
+      },
+      "RIS-LAD": {
+        "train": 4382,
+        "val": 585,
+        "test": 508
+      },
+      "UAVPal": {
+        "train": 163,
+        "val": 20,
+        "test": 20
+      },
+      "UAVid": {
+        "train": 193,
+        "val": 25,
+        "test": 23
+      }
+    },
+    "d_role_split_counts": {
+      "oblique_depth": {
+        "train": 8838,
+        "val": 1002,
+        "test": 1068
+      },
+      "vertical_relative_height": {
+        "train": 5698,
+        "val": 827,
+        "test": 707
+      }
+    },
+    "split_group_overlap": 0,
+    "split_rgb_path_overlap": 0,
+    "split_scene_cluster_overlap": 0,
+    "same_rgb_diff_D_conflicts": 0,
+    "depth_independent_gt_masks": true
+  }
+}

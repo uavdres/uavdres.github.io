@@ -1,0 +1,88 @@
+{
+  "platforms": [
+    {
+      "id": "arxiv",
+      "group": "publication",
+      "zh": "arXiv",
+      "en": "arXiv",
+      "short_zh": "arXiv",
+      "short_en": "arXiv",
+      "desc_zh": "论文预印本与技术报告",
+      "desc_en": "Preprint paper & technical report",
+      "url": "",
+      "code": ""
+    },
+    {
+      "id": "github",
+      "group": "publication",
+      "zh": "GitHub",
+      "en": "GitHub",
+      "short_zh": "GitHub",
+      "short_en": "GitHub",
+      "desc_zh": "读取器、评测工具与基准代码",
+      "desc_en": "Data reader, evaluation & baselines",
+      "url": "https://github.com/LVCC1596/UAV-DRES",
+      "code": ""
+    },
+    {
+      "id": "huggingface",
+      "group": "mirror",
+      "zh": "Hugging Face",
+      "en": "Hugging Face",
+      "short_zh": "Hugging Face",
+      "short_en": "Hugging Face",
+      "desc_zh": "数据集主仓库与标准数据卡",
+      "desc_en": "Dataset Hub & dataset card",
+      "url": "https://huggingface.co/datasets/jagger-who/UAV-DRES",
+      "code": ""
+    },
+    {
+      "id": "kaggle",
+      "group": "mirror",
+      "zh": "Kaggle",
+      "en": "Kaggle",
+      "short_zh": "Kaggle",
+      "short_en": "Kaggle",
+      "desc_zh": "Kaggle Datasets 在线镜像",
+      "desc_en": "Kaggle Datasets mirror",
+      "url": "https://www.kaggle.com/datasets/jagger0316/uav-rgbd-15class-pri",
+      "code": ""
+    },
+    {
+      "id": "gdrive",
+      "group": "mirror",
+      "zh": "谷歌网盘",
+      "en": "Google Drive",
+      "short_zh": "谷歌网盘",
+      "short_en": "Google Drive",
+      "desc_zh": "Google Drive 完整归档包（需授权）",
+      "desc_en": "Full archive on Google Drive (access required)",
+      "url": "https://drive.google.com/drive/folders/17zVkY4EBMHrjZ9Pp1qVGff09NeU77in8",
+      "code": ""
+    },
+    {
+      "id": "baidu",
+      "group": "mirror",
+      "zh": "百度网盘",
+      "en": "Baidu Netdisk",
+      "short_zh": "百度网盘",
+      "short_en": "Baidu Netdisk",
+      "desc_zh": "网盘镜像归档",
+      "desc_en": "Dataset archive mirror",
+      "url": "https://pan.baidu.com/s/1bcPwdoQlie6eLCqCGXwmWA",
+      "code": "jr16"
+    },
+    {
+      "id": "pan123",
+      "group": "mirror",
+      "zh": "123网盘",
+      "en": "123 Cloud Drive",
+      "short_zh": "123网盘",
+      "short_en": "123 Cloud Drive",
+      "desc_zh": "直连高速下载镜像归档",
+      "desc_en": "High-speed direct mirror",
+      "url": "https://1818733195.share.123pan.cn/123pan/wO1Hjv-a8vVh",
+      "code": ""
+    }
+  ]
+}
