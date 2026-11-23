@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -24,73 +24,6 @@ jobs:
       - name: Check out website repository
         uses: actions/checkout@v4
 
-      - name: Import the published showcase
-        if: ${{ hashFiles('site/index.html') == '' }}
-        run: |
-          python3 - <<'PY'
-          from concurrent.futures import ThreadPoolExecutor
-          import json
-          from pathlib import Path, PurePosixPath
-          from urllib.request import Request, urlopen
-
-          source = 'https://lvcc1596.github.io/UAV-DRES/'
-          destination = Path('site')
-          files = [
-              'index.html',
-              'quality/favicon.svg',
-              'quality/research-home.css',
-              'quality/research-home.js',
-              'quality/research-benchmark.js',
-              'quality/target-labels.js',
-              'quality/release-links.json',
-              'quality/v11/dataset.json',
-              'quality/v11/summary.json',
-              'quality/research/split-report.json',
-              'quality/showcase-data-v11.json',
-          ]
-
-          def download(relative_path):
-              path = PurePosixPath(relative_path)
-              if path.is_absolute() or '..' in path.parts:
-                  raise ValueError(f'Invalid website asset path: {relative_path}')
-              request = Request(source + path.as_posix(), headers={'Cache-Control': 'no-cache'})
-              with urlopen(request, timeout=30) as response:
-                  payload = response.read()
-              target = destination / path
-              target.parent.mkdir(parents=True, exist_ok=True)
-              target.write_bytes(payload)
-
-          with ThreadPoolExecutor(max_workers=8) as executor:
-              list(executor.map(download, files))
-
-          manifest = json.loads((destination / 'quality/showcase-data-v11.json').read_text())
-          media_root = PurePosixPath('quality') / manifest['asset_base']
-          media = {
-              (media_root / asset['file']).as_posix()
-              for sample in manifest['items']
-              for variants in sample['assets'].values()
-              for asset in variants
-          }
-          if len(manifest['items']) != 24 or len(media) != 288:
-              raise ValueError('The showcase asset inventory has changed')
-          with ThreadPoolExecutor(max_workers=8) as executor:
-              list(executor.map(download, sorted(media)))
-
-          homepage = (destination / 'index.html').read_text()
-          if '<h1>UAV-DRES</h1>' not in homepage or 'id="distribution"' in homepage:
-              raise ValueError('Unexpected showcase homepage version')
-          dataset = json.loads((destination / 'quality/v11/dataset.json').read_text())
-          if dataset['records'] != 18140 or dataset['rgb_groups'] != 11322:
-              raise ValueError('Unexpected benchmark statistics')
-          (destination / '.nojekyll').touch()
-          print(f'Imported {len(files) + len(media) + 1} website files')
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site
-          git commit -m 'Import the UAV-DRES showcase'
-          git push
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
@@ -101,4 +34,4 @@ jobs:
 
       - name: Deploy website
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
